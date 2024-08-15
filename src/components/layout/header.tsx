@@ -5,6 +5,7 @@
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -17,7 +18,10 @@ export default function Header() {
   return (
     <div className="hidden md:flex justify-between items-center w-full font-poppins max-w-[1366px] text-white">
       <div className="p-2">
-        <img src="https://hotelunhas.com/wp-content/uploads/2024/06/Logo-Unhas-.png" />
+        <Image
+          src="https://hotelunhas.com/wp-content/uploads/2024/06/Logo-Unhas-.png"
+          alt="Logo-Unhas-.png"
+        />
       </div>
       <div className="flex flex-col">
         <div className="p-2 flex gap-2">

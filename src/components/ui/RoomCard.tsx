@@ -1,13 +1,6 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 type RoomCardProps = {
   title: string;
@@ -28,7 +21,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
     <Card className="max-w-xs bg-white border border-gray-200 rounded-lg shadow-md p-4">
       <div className="grid grid-cols-1 gap-2 mb-4">
         {images.map((src, index) => (
-          <img
+          <Image
             key={index}
             src={src || "path/to/placeholder-image.jpg"}
             alt={`${title} ${index + 1}`}

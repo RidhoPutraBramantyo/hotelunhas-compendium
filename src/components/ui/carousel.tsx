@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
 const rooms = [
@@ -78,7 +79,7 @@ const Carousel = () => {
             key={index}
             className="w-full flex-shrink-0 max-w-xs md:max-w-sm lg:max-w-[250px]"
           >
-            <img
+            <Image
               src={item.imageUrl}
               alt={item.title}
               className="w-full h-56 object-cover"
