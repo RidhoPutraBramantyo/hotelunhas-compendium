@@ -440,15 +440,17 @@ export default function Compendium() {
                 Rotterdam
               </h1>
             </div>
-            <div className="flex justify-end items-center gap-3 w-full">
-              <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                alt="Location"
-                className="w-6 h-8"
-              />
-              <p className="text-end text-md sm:text-lg italic font-semibold p-2 rounded-lg bg-white bg-opacity-50">
-                Jl. Ujung Pandang, Bulo Gading, Kec. Ujung Pandang
-              </p>
+            <div className="w-full flex justify-end">
+              <div className="flex justify-end items-center gap-3 w-fit p-2 rounded-full bg-white bg-opacity-50">
+                <img
+                  src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
+                  alt="Location"
+                  className="w-6 h-8"
+                />
+                <p className="text-end text-md italic">
+                  Jl. Ujung Pandang, Bulo Gading, Kec. Ujung Pandang
+                </p>
+              </div>
             </div>
           </div>
 
@@ -524,7 +526,7 @@ export default function Compendium() {
             </div>
             <div className="flex gap-5 text-black w-full h-full font-poppins">
               <div className="flex flex-col gap-2">
-                <h2 className="font-bold text-4xl text-black text-end">
+                <h2 className="font-semibold text-3xl text-black text-end">
                   Taman
                 </h2>
 
@@ -537,7 +539,7 @@ export default function Compendium() {
                     />
                   </div>
                   <div className="w-full md:w-2/3 h-full">
-                    <p className="text-sm w-full md:w-2/3 h-fit">
+                    <p className="text-sm w-full h-fit">
                       Tamannya cukup luas sehingga cocok untuk berpiknik, namun
                       ingat untuk tidak mengotori. Pengunjung sering menggunakan
                       taman ini untuk duduk santai sambil menikmati keheningan
@@ -570,15 +572,15 @@ export default function Compendium() {
               <h1 className="text-orange-500 text-4xl md:text-6xl font-extrabold p-0">
                 Losari
               </h1>
-              <div className="flex items-center gap-3 w-full md:w-1/2">
-                <div className="w-[40px] h-10 bg-white text-opacity-50">
+              <div className="flex items-center gap-3 w-fit p-2 rounded-full bg-transparent bg-white bg-opacity-0 md:bg-opacity-50 ">
+                <div className="w-[35px] h-[35px] p-1 flex justify-center items-center">
                   <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                     alt="Location"
-                    className="w-6 h-8"
+                    className="w-4 h-6 md:w-6 md:h-8"
                   />
                 </div>
-                <p className="text-end text-sm sm:text-md p-2 rounded-lg bg-white bg-opacity-50">
+                <p className="text-start text-md italic">
                   Jalan Tanjung Bunga, Desa Maloku, Kecamatan Ujung Pandang
                 </p>
               </div>
@@ -849,7 +851,7 @@ export default function Compendium() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 w-full sm:w-1/3">
+              <div className="flex items-center gap-3 p-3 w-full sm:w-1/3">
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                   alt="Location"
