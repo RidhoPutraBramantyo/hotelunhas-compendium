@@ -19,6 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="shortcut icon"
+          href="https://hotelunhas.com/wp-content/uploads/2022/10/cropped-icon-png.png"
+          type="image/x-icon"
+        />
+      </head>
       <body className={` font-poppins w-full flex flex-col justify-center`}>
         {/* <div className="w-full flex justify-center bg-black">
           <Header />
