@@ -213,7 +213,7 @@ export default function Compendium() {
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/UnhasHotel-frame.png')] bg-cover w-full flex justify-center">
         <div className="max-w-[1366px] bg-center w-full flex flex-col gap-4 p-8">
           <div className="w-full flex justify-center">
-            <Image
+            <img
               src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
               alt="logohotelunhas"
               className="w-24"
@@ -230,7 +230,7 @@ export default function Compendium() {
             </div>
 
             <div className="flex items-center gap-3 w-full md:w-1/3">
-              <Image
+              <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                 alt="Location"
                 className="w-6 h-8"
@@ -267,7 +267,7 @@ export default function Compendium() {
                   </p>
                 </div>
                 <div className="hidden w-full md:w-1/3 h-full md:flex items-center">
-                  <Image
+                  <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/08/Pemotongan-pita-2.png"
                     alt=""
                     className="w-full h-fit
@@ -285,63 +285,63 @@ export default function Compendium() {
                   </h2>
                   <div className="grid grid-cols-3 gap-2.5">
                     <div className="row-span-2 border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2022/11/IMG_20221026_113126-400x284.jpg"
                         alt="Image 1"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2024/05/IMG_20221022_183019-scaled-1-400x284.jpg"
                         alt="Image 2"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2024/05/IMG_20221022_194646-scaled-1-400x284.jpg"
                         alt="Image 3"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="col-span-2 border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-04-at-14.08.44.jpeg"
                         alt="Image 4"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-04-at-14.08.46-2.jpeg"
                         alt="Image 5"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="row-span-2 border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2024/06/deluxe-room-1.png"
                         alt="Image 6"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2024/06/junior-suite-room-1.png"
                         alt="Image 7"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2024/06/deluxe-room-2.png"
                         alt="Image 8"
                         className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="col-span-2 border border-gray-300">
-                      <Image
+                      <img
                         src="https://hotelunhas.com/wp-content/uploads/2024/06/Rectangle-2-1.png"
                         alt="Image 9"
                         className="w-full h-full object-cover"
@@ -361,7 +361,7 @@ export default function Compendium() {
                           className="flex items-center gap-1 p-1.5 font-poppins font-semibold text-xs rounded-lg border border-gray-300 bg-slate-100"
                         >
                           <div className="">
-                            <Image
+                            <img
                               src="https://hotelunhas.com/wp-content/uploads/2024/08/material-symbols-light_meeting-room.png"
                               alt="door-icon"
                               className="w-4 h-4"
@@ -383,7 +383,7 @@ export default function Compendium() {
                           key={index}
                           className="flex items-center gap-1 p-1.5 font-poppins font-semibold text-xs rounded-lg border border-gray-300 bg-slate-100"
                         >
-                          <Image
+                          <img
                             className="w-4 h-4"
                             src="https://hotelunhas.com/wp-content/uploads/2024/08/solar_star-fall-bold.png"
                             alt="Fasilitas Icon"
@@ -409,7 +409,7 @@ export default function Compendium() {
               <div className="w-full grid grid-cols-2 md:flex md:flex-col gap-2 items-end overflow-auto">
                 {promoImage.map((item, index) => (
                   <div key={index} className="w-full md:w-2/3">
-                    <Image
+                    <img
                       src={item.imgSrc}
                       alt=""
                       className="max-h-[320px] object-cover"
@@ -426,7 +426,7 @@ export default function Compendium() {
         <div className="max-w-[1366px] flex flex-col sm:flex-row gap-4 p-8">
           <div className="flex flex-col w-full sm:w-1/2">
             <div className="w-full flex justify-start">
-              <Image
+              <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                 alt="logohotelunhas"
                 className="w-24"
@@ -441,7 +441,7 @@ export default function Compendium() {
               </h1>
             </div>
             <div className="flex justify-end items-center gap-3 w-full">
-              <Image
+              <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                 alt="Location"
                 className="w-6 h-8"
@@ -467,7 +467,7 @@ export default function Compendium() {
                 Museum La Galigo
               </h2>
               <div>
-                <Image
+                <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/MuseumLaGaligo.png"
                   alt=""
                   className="rounded-xl"
@@ -530,7 +530,7 @@ export default function Compendium() {
 
                 <div className="w-full h-full flex flex-col md:flex-row justify-center items-center gap-4">
                   <div className="w-full md:w-1/3 h-full">
-                    <Image
+                    <img
                       src="https://hotelunhas.com/wp-content/uploads/2024/08/taman-rotterdam.png"
                       alt="taman-Rotterdam"
                       className="rounded-lg object-cover w-full h-full" /* Equivalent to 5% border-radius */
@@ -557,7 +557,7 @@ export default function Compendium() {
         <div className="max-w-[1366px] w-full flex flex-col sm:flex-row gap-4 p-8 ">
           <div className="flex flex-col w-full sm:w-1/2">
             <div className="w-full flex justify-end md:justify-start">
-              <Image
+              <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                 alt="logohotelunhas"
                 className="w-24"
@@ -572,7 +572,7 @@ export default function Compendium() {
               </h1>
               <div className="flex items-center gap-3 w-full md:w-1/2">
                 <div className="w-[40px] h-10 bg-white text-opacity-50">
-                  <Image
+                  <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                     alt="Location"
                     className="w-6 h-8"
@@ -596,7 +596,7 @@ export default function Compendium() {
                       </h2>
                       <div className="w-full h-full flex flex-col md:flex-row justify-center items-center gap-4">
                         <div className="w-full md:w-[30%] h-full">
-                          <Image
+                          <img
                             src={spot.imgSrc}
                             alt={spot.alt}
                             className="w-full md:w-[180px] h-full md:h-[180px] rounded-lg object-cover"
@@ -620,7 +620,7 @@ export default function Compendium() {
                       </h2>
                       <div className="w-full h-full flex flex-col md:flex-row-reverse justify-center items-center gap-4">
                         <div className="w-full md:w-[30%] h-full">
-                          <Image
+                          <img
                             src={spot.imgSrc}
                             alt={spot.alt}
                             className="w-full md:w-[180px] h-full md:h-[180px] rounded-lg object-cover"
@@ -646,7 +646,7 @@ export default function Compendium() {
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/MandalaSombaOpu-WithoutText-Frame.png')] bg-cover bg-center w-full h-full flex justify-center">
         <div className="max-w-[1366px] w-full h-full flex flex-col gap-10 py-8">
           <div className="w-full flex justify-center">
-            <Image
+            <img
               src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
               alt="logohotelunhas"
               className="w-24"
@@ -667,7 +667,7 @@ export default function Compendium() {
                 </div>
 
                 <div className="flex items-center gap-3 w-full md:w-1/2">
-                  <Image
+                  <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                     alt="Location"
                     className="w-6 h-8"
@@ -679,7 +679,7 @@ export default function Compendium() {
                 </div>
               </div>
               <div>
-                <Image
+                <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/Monumen-Mandala.png"
                   alt=""
                 />
@@ -756,7 +756,7 @@ export default function Compendium() {
                 </div>
 
                 <div className="flex items-center gap-3 w-full md:w-1/2">
-                  <Image
+                  <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                     alt="Location"
                     className="w-6 h-8"
@@ -769,7 +769,7 @@ export default function Compendium() {
               </div>
               {/* =========================================== */}
               <div>
-                <Image
+                <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/SombaOpu-Top.png"
                   alt=""
                 />
@@ -831,7 +831,7 @@ export default function Compendium() {
         <div className="max-w-[1366px] w-full flex flex-row gap-4 p-4 sm:p-0">
           <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/AkkarenaSide-1.png')] bg-cover bg-center w-1/4 hidden sm:flex flex-row p-4">
             <div className="w-full flex justify-start">
-              <Image
+              <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                 alt="logohotelunhas"
                 className="w-28 h-20"
@@ -850,7 +850,7 @@ export default function Compendium() {
               </div>
 
               <div className="flex items-center gap-3 w-full sm:w-1/3">
-                <Image
+                <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                   alt="Location"
                   className="w-6 h-8"
@@ -880,7 +880,7 @@ export default function Compendium() {
                   <div className="w-full h-full flex flex-col-reverse md:flex-row justify-center items-center gap-4">
                     <p className="text-sm w-full md:w-2/3 h-fit">{item.desc}</p>
                     <div className="w-full md:w-1/3 h-full flex items-center">
-                      <Image
+                      <img
                         src={item.imgSrc}
                         alt="taman-Rotterdam"
                         className="w-full h-full rounded-lg object-cover" /* Equivalent to 5% border-radius */
@@ -899,14 +899,14 @@ export default function Compendium() {
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="w-full sm:w-1/2 flex flex-col items-center gap-0">
               <div className="w-full flex justify-start">
-                <Image
+                <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                   alt="logohotelunhas"
                   className="w-24"
                 />
               </div>
               <div className="w-fit h-fit">
-                <Image
+                <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-Main-Sticker.png"
                   alt=""
                 />
@@ -924,7 +924,7 @@ export default function Compendium() {
                 </div>
 
                 <div className="flex items-center gap-3 w-full">
-                  <Image
+                  <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                     alt="Location"
                     className="w-6 h-8"
@@ -969,7 +969,7 @@ export default function Compendium() {
                     </p>
                   </div>
                   <div className="w-full">
-                    <Image
+                    <img
                       src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-sub-Sticker-1.png"
                       alt=""
                       className=""
@@ -1000,7 +1000,7 @@ export default function Compendium() {
                   </p>
                 </div>
                 <div className="w-full max-h-[280px] sm:w-1/2 md:1/4">
-                  <Image
+                  <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-sub-Sticker-2.png"
                     alt=""
                     className="h-full"
@@ -1016,7 +1016,7 @@ export default function Compendium() {
         <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Header.png')] bg-cover bg-center w-full flex flex-col items-center gap-4 pt-8 pb-4 px-8">
           <div className="max-w-[1366px] w-full">
             <div className="w-full flex justify-end md:justify-start">
-              <Image
+              <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                 alt="logohotelunhas"
                 className="w-24"
@@ -1033,7 +1033,7 @@ export default function Compendium() {
               </div>
 
               <div className="flex justify-end items-center gap-3 w-full">
-                <Image
+                <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                   alt="Location"
                   className="w-6 h-8"
@@ -1089,7 +1089,7 @@ export default function Compendium() {
                         >
                           {item.imgSrc && (
                             <div className="w-full md:w-1/4">
-                              <Image
+                              <img
                                 src={item.imgSrc}
                                 alt={item.alt}
                                 className="rounded-lg"
@@ -1130,7 +1130,7 @@ export default function Compendium() {
                   <h3 className="text-2xl font-bold ">{wisata.title}</h3>
                   <div className="flex flex-col lg:flex-row items-center gap-2 h-full">
                     <div className="">
-                      <Image
+                      <img
                         src={wisata.imgSrc}
                         alt={wisata.alt}
                         className="rounded-lg mb-2 w-full h-[full] object-cover"

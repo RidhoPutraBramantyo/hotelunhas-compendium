@@ -21,7 +21,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
     <Card className="max-w-xs bg-white border border-gray-200 rounded-lg shadow-md p-4">
       <div className="grid grid-cols-1 gap-2 mb-4">
         {images.map((src, index) => (
-          <Image
+          <img
             key={index}
             src={src || "path/to/placeholder-image.jpg"}
             alt={`${title} ${index + 1}`}

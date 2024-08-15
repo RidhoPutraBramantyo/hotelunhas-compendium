@@ -79,7 +79,7 @@ const Carousel = () => {
             key={index}
             className="w-full flex-shrink-0 max-w-xs md:max-w-sm lg:max-w-[250px]"
           >
-            <Image
+            <img
               src={item.imageUrl}
               alt={item.title}
               className="w-full h-56 object-cover"

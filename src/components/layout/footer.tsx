@@ -58,7 +58,7 @@ export default function Footer() {
         <div className="bg-red-600 h-2 w-full md:w-1/2" />
         <div className="w-full flex flex-col md:flex-row justify-between py-10 gap-4">
           <div className="flex flex-col gap-8">
-            <Image
+            <img
               src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
               className="w-20"
               alt="Unhas Hotel Logo"
@@ -75,7 +75,7 @@ export default function Footer() {
                 key={contactInfo[0].alt}
                 className="flex items-center gap-2.5"
               >
-                <Image
+                <img
                   src={contactInfo[0].src}
                   alt={contactInfo[0].alt}
                   className="w-6 h-8"
@@ -86,7 +86,7 @@ export default function Footer() {
                 key={contactInfo[1].alt}
                 className="flex items-center gap-2.5"
               >
-                <Image
+                <img
                   src={contactInfo[1].src}
                   alt={contactInfo[1].alt}
                   className="w-6 h-6"
@@ -97,7 +97,7 @@ export default function Footer() {
                 key={contactInfo[2].alt}
                 className="flex items-center gap-2.5"
               >
-                <Image
+                <img
                   src={contactInfo[2].src}
                   alt={contactInfo[2].alt}
                   className="w-6 h-6"
@@ -115,7 +115,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image
+                  <img
                     src={src}
                     alt={alt}
                     width="43"
