@@ -243,7 +243,7 @@ export default function Compendium() {
           </div>
           {/* ===================================== */}
           <div className="flex flex-col md:flex-row w-full gap-4">
-            <div className="w-full md:w-3/4 flex flex-col gap-4">
+            <div className="w-full flex flex-col gap-4">
               <div
                 id="baris-3"
                 className="w-full flex flex-col-reverse md:flex-row gap-4"
@@ -252,18 +252,17 @@ export default function Compendium() {
                   <h2 className="font-semibold text-4xl text-black font-andhyta">
                     Sejarah Singkat
                   </h2>
-                  <p className="text-sm">
+                  <p className="text-md md:text-lg">
                     Hotel Unhas diresmikan pada jumat sore (22/4/2022) oleh
                     Universitas Hasanuddin di Makassar untuk menyediakan
                     akomodasi yang nyaman bagi tamu universitas dan masyarakat
                     umum. Terletak di dalam kampus Universitas Hasanuddin, hotel
                     ini awalnya dibangun untuk mendukung kegiatan akademik
-                    seperti konferensi dan seminar. Selama bertahun-tahun, Hotel
-                    Unhas telah mengalami renovasi untuk meningkatkan fasilitas
-                    dan layanan. Kini, hotel ini dilengkapi dengan berbagai
-                    fasilitas modern seperti ruang konferensi, restoran, dan
-                    pusat kebugaran, menjadikannya pilihan ideal bagi tamu yang
-                    berkunjung ke universitas maupun Kota Makassar.
+                    seperti konferensi dan seminar. Unhas hotel terus memberikan
+                    pelayanan dan fasilitas terbaik seperti: ruang konferensi,
+                    restoran, dan pusat kebugaran, menjadikannya pilihan ideal
+                    bagi tamu yang berkunjung ke universitas maupun Kota
+                    Makassar.
                   </p>
                 </div>
                 <div className="hidden w-full md:w-1/3 h-full md:flex items-center">
@@ -398,7 +397,7 @@ export default function Compendium() {
             </div>
             <div
               id="right-side"
-              className="w-full md:w-1/4 flex gap-2 flex-col items-center"
+              className="w-full md:w-1/4 hidden gap-2 flex-col items-center"
             >
               <div className="w-full flex justify-end">
                 <h2 className="font-semibold text-4xl text-black font-andhyta flex flex-col text-end">
