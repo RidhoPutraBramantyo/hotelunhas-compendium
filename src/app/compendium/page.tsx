@@ -70,7 +70,7 @@ export default function Compendium() {
       ],
     },
     {
-      title: "Kapal Phinisi",
+      title: "Kapal Phinissi",
       imgSrc:
         "https://hotelunhas.com/wp-content/uploads/2024/08/Pantai-Losari-3-Kapal-Phinissi.png",
       alt: "taman-Rotterdam",
@@ -219,11 +219,9 @@ export default function Compendium() {
             />
           </div>
           <div className="w-full flex flex-col md:flex-row justify-between">
-            <div className="w-full md:w-1/2 flex flex-col gap-0">
-              <div className="font-bold text-4xl text-black font-andhyta">
-                Unhas
-              </div>
-              <div className="text-4xl lg:text-6xl font-extrabold text-orange-600">
+            <div className="w-full md:w-1/3 flex flex-col gap-0">
+              <div className="text-2xl font-bold">Unhas</div>
+              <div className="text-4xl font-extrabold text-orange-600">
                 Hotel & Convention
               </div>
             </div>
@@ -242,13 +240,13 @@ export default function Compendium() {
           </div>
           {/* ===================================== */}
           <div className="flex flex-col md:flex-row w-full gap-4">
-            <div className="w-full md:w-3/4 flex flex-col gap-4">
+            <div className="w-full md:w-3/4">
               <div
                 id="baris-3"
                 className="w-full flex flex-col-reverse md:flex-row gap-4"
               >
                 <div className="flex flex-col w-full md:w-2/3 gap-4">
-                  <h2 className="font-semibold text-4xl text-black font-andhyta">
+                  <h2 className="font-bold text-4xl text-black">
                     Sejarah Singkat
                   </h2>
                   <p className="text-sm">
@@ -278,10 +276,8 @@ export default function Compendium() {
                 id=""
                 className="flex flex-col md:flex-row items-start gap-4"
               >
-                <div className="w-full md:w-1/2 flex flex-col gap-0">
-                  <h2 className="font-semibold text-4xl text-black font-andhyta">
-                    Galery
-                  </h2>
+                <div className="w-full md:w-1/2 flex flex-col gap-4">
+                  <h2 className="font-bold text-4xl text-black">Galery</h2>
                   <div className="grid grid-cols-3 gap-2.5">
                     <div className="row-span-2 border border-gray-300">
                       <img
@@ -349,10 +345,8 @@ export default function Compendium() {
                   </div>
                 </div>
                 <div className="flex flex-col w-full md:w-1/2 gap-4">
-                  <div className="flex flex-col gap-0">
-                    <h2 className="font-semibold text-4xl text-black font-andhyta">
-                      Kamar
-                    </h2>
+                  <div className="flex flex-col gap-4">
+                    <h2 className="font-bold text-4xl text-black">Kamar</h2>
                     <div className="flex flex-wrap gap-2">
                       {roomTypes.map((roomType, index) => (
                         <button
@@ -366,16 +360,14 @@ export default function Compendium() {
                               className="w-4 h-4"
                             />
                           </div>
-                          <span className="text-md md:text-lg">{roomType}</span>
+                          <span>{roomType}</span>
                         </button>
                       ))}
                     </div>
                   </div>
 
-                  <div className="flex flex-col gap-0">
-                    <h2 className="font-semibold text-4xl text-black font-andhyta">
-                      Fasilitas
-                    </h2>
+                  <div className="flex flex-col gap-4">
+                    <h2 className="font-bold text-4xl text-black">Fasilitas</h2>
                     <div className="flex flex-wrap gap-2">
                       {facilities.map((facility, index) => (
                         <button
@@ -387,7 +379,7 @@ export default function Compendium() {
                             src="https://hotelunhas.com/wp-content/uploads/2024/08/solar_star-fall-bold.png"
                             alt="Fasilitas Icon"
                           />
-                          <span className="text-md md:text-lg">{facility}</span>
+                          <span className="">{facility}</span>
                         </button>
                       ))}
                     </div>
@@ -397,22 +389,15 @@ export default function Compendium() {
             </div>
             <div
               id="right-side"
-              className="w-full md:w-1/4 flex gap-2 flex-col items-center"
+              className="w-full md:w-1/4 flex flex-col gap-2 items-center"
             >
-              <div className="w-full flex justify-end">
-                <h2 className="font-semibold text-4xl text-black font-andhyta flex flex-col text-end">
-                  <span>Promo dan</span>
-                  <span>Event</span>
-                </h2>
-              </div>
-              <div className="w-full grid grid-cols-2 md:flex md:flex-col gap-2 items-end overflow-auto">
+              <h2 className="font-bold text-4xl text-black">
+                Promo dan& Event
+              </h2>
+              <div className="grid grid-cols-2 md:flex md:flex-col gap-2 items-center overflow-auto">
                 {promoImage.map((item, index) => (
                   <div key={index} className="w-full md:w-2/3">
-                    <img
-                      src={item.imgSrc}
-                      alt=""
-                      className="max-h-[320px] object-cover"
-                    />
+                    <img src={item.imgSrc} alt="" className="w-full" />
                   </div>
                 ))}
               </div>
@@ -432,31 +417,19 @@ export default function Compendium() {
               />
             </div>
             <div className="flex flex-col justify-start gap-0">
-              <h2 className="text-black text-4xl font-semibold font-andhyta">
+              <h2 className="text-black sm:text-white text-4xl font-bold p-0">
                 Benteng
               </h2>
-              <h1 className="text-amber-400 text-4xl md:text-8xl font-extrabold p-0">
+              <h1 className="text-orange-500 text-4xl md:text-6xl font-extrabold p-0">
                 Rotterdam
               </h1>
-            </div>
-            <div className="flex justify-end items-center gap-3 w-full">
-              <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                alt="Location"
-                className="w-6 h-8"
-              />
-              <p className="text-end text-md sm:text-lg italic font-semibold p-2 rounded-lg bg-white bg-opacity-50">
-                Jl. Ujung Pandang, Bulo Gading, Kec. Ujung Pandang
-              </p>
             </div>
           </div>
 
           <div className="flex flex-col w-full sm:w-1/2 gap-4">
             <div className="flex flex-col">
-              <h2 className="font-semibold text-4xl text-black font-andhyta flex flex-col">
-                Fasilitas
-              </h2>
-              <span className="font-extralight">
+              <h2 className="font-bold text-4xl text-black">Fasilitas</h2>
+              <span>
                 Fasilitas yang tersedia di Museum Rotterdam yang dapat dinikmati
                 para pengunjung.
               </span>
@@ -532,7 +505,7 @@ export default function Compendium() {
                     <img
                       src="https://hotelunhas.com/wp-content/uploads/2024/08/taman-rotterdam.png"
                       alt="taman-Rotterdam"
-                      className="rounded-lg object-cover w-full h-full" /* Equivalent to 5% border-radius */
+                      className="rounded-lg" /* Equivalent to 5% border-radius */
                     />
                   </div>
                   <div className="w-full md:w-2/3 h-full">
@@ -555,87 +528,48 @@ export default function Compendium() {
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Losari-Frame.png')] bg-cover bg-center w-full flex justify-center">
         <div className="max-w-[1366px] w-full flex flex-col sm:flex-row gap-4 p-8 ">
           <div className="flex flex-col w-full sm:w-1/2">
-            <div className="w-full flex justify-end md:justify-start">
+            <div className="w-full flex justify-start">
               <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                 alt="logohotelunhas"
                 className="w-24"
               />
             </div>
-            <div className="flex flex-col justify-start gap-0 ">
-              <h2 className="text-black text-4xl font-semibold font-andhyta p-0">
-                Pantai
-              </h2>
-              <h1 className="text-orange-500 text-4xl md:text-6xl font-extrabold p-0">
-                Losari
+            <div className="flex flex-col justify-start gap-0">
+              <h2 className="text-black text-4xl font-bold p-0">Benteng</h2>
+              <h1 className="text-orange-500 text-6xl font-extrabold p-0">
+                Rotterdam
               </h1>
-              <div className="flex items-center gap-3 w-full md:w-1/2">
-                <div className="w-10 h-10 bg-white text-opacity-50">
-                  <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                    alt="Location"
-                    className="w-6 h-8"
-                  />
-                </div>
-                <p className="text-end text-sm sm:text-md p-2 rounded-lg bg-white bg-opacity-50">
-                  Jalan Tanjung Bunga, Desa Maloku, Kecamatan Ujung Pandang
-                </p>
-              </div>
             </div>
           </div>
           {/*  */}
           <div className="flex flex-col w-full sm:w-1/2 gap-4">
             {spots.map((spot, index) => (
-              <div key={index}>
-                {index % 2 == 0 ? (
-                  <div className="flex gap-5 text-black w-full h-full font-poppins">
-                    <div className="flex flex-col gap-2">
-                      <h2 className="font-semibold text-3xl text-black text-end">
-                        {spot.title}
-                      </h2>
-                      <div className="w-full h-full flex flex-col md:flex-row justify-center items-center gap-4">
-                        <div className="w-full md:w-[30%] h-full">
-                          <img
-                            src={spot.imgSrc}
-                            alt={spot.alt}
-                            className="w-full md:w-[180px] h-full md:h-[180px] rounded-lg object-cover"
-                          />
-                        </div>
-                        <div className="flex flex-col w-full md:w-[70%] h-full gap-2">
-                          {spot.descriptions.map((desc, i) => (
-                            <p key={i} className="text-sm w-full h-fit">
-                              {desc}
-                            </p>
-                          ))}
-                        </div>
-                      </div>
+              <div
+                key={index}
+                className="flex gap-5 text-black w-full h-full font-poppins"
+              >
+                <div className="flex flex-col gap-2">
+                  <h2 className="font-bold text-3xl text-black text-end">
+                    {spot.title}
+                  </h2>
+                  <div className="w-full h-full flex flex-col md:flex-row justify-center items-center gap-4">
+                    <div className="w-full md:w-[30%] h-full">
+                      <img
+                        src={spot.imgSrc}
+                        alt={spot.alt}
+                        className="w-full md:w-[180px] h-full md:h-[180px] rounded-lg object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-col w-full md:w-[70%] h-full gap-2">
+                      {spot.descriptions.map((desc, i) => (
+                        <p key={i} className="text-sm w-full h-fit">
+                          {desc}
+                        </p>
+                      ))}
                     </div>
                   </div>
-                ) : (
-                  <div className="flex gap-5 text-black w-full h-full font-poppins">
-                    <div className="flex flex-col gap-2">
-                      <h2 className="font-semibold text-3xl text-black text-start">
-                        {spot.title}
-                      </h2>
-                      <div className="w-full h-full flex flex-col md:flex-row-reverse justify-center items-center gap-4">
-                        <div className="w-full md:w-[30%] h-full">
-                          <img
-                            src={spot.imgSrc}
-                            alt={spot.alt}
-                            className="w-full md:w-[180px] h-full md:h-[180px] rounded-lg object-cover"
-                          />
-                        </div>
-                        <div className="flex flex-col w-full md:w-[70%] h-full gap-2">
-                          {spot.descriptions.map((desc, i) => (
-                            <p key={i} className="text-sm w-full h-fit">
-                              {desc}
-                            </p>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
@@ -657,9 +591,7 @@ export default function Compendium() {
             <div className="flex flex-col w-full sm:w-1/2 h-full gap-4">
               <div className="w-full flex flex-col md:flex-row justify-between">
                 <div className="w-full md:w-1/2 flex flex-col gap-0">
-                  <div className="text-4xl font-bold text-black font-andhyta">
-                    Monumen
-                  </div>
+                  <div className="text-2xl font-bold text-black">Monumen</div>
                   <div className="text-4xl font-extrabold text-orange-600">
                     Mandala
                   </div>
@@ -746,9 +678,7 @@ export default function Compendium() {
             <div className="flex flex-col w-full sm:w-1/2 gap-4">
               <div className="w-full flex flex-col md:flex-row justify-between">
                 <div className="w-full md:w-1/2 flex flex-col gap-0">
-                  <div className="text-4xl font-bold text-black font-andhyta">
-                    Benteng
-                  </div>
+                  <div className="text-2xl font-bold text-black">Benteng</div>
                   <div className="text-4xl font-extrabold text-orange-600">
                     Somba Opu
                   </div>
@@ -840,9 +770,7 @@ export default function Compendium() {
           <div className="flex flex-col gap-4 w-full sm:w-3/4 pr-0 sm:pr-8 sm:py-8 ">
             <div className="w-full flex flex-col md:flex-row justify-between">
               <div className="w-full sm:w-1/3 flex flex-col gap-0">
-                <div className="text-4xl font-bold text-black font-andhyta">
-                  Pantai
-                </div>
+                <div className="text-2xl font-bold">Pantai</div>
                 <div className="text-4xl font-extrabold text-orange-600">
                   Akkarena
                 </div>
@@ -858,16 +786,6 @@ export default function Compendium() {
                   Jl. Metro Tj. Bunga, Tj. Merdeka, Kec. Tamalate, Kota Makassar
                 </p>
               </div>
-            </div>
-
-            <div className="flex flex-col gap-0">
-              <h2 className="text-4xl font-bold text-black font-andhyta">
-                Aktifitas
-              </h2>
-              <p>
-                Aktifitas seru yang tersedia di pulau Kodingareng Keke yang
-                dapat dinikmati para pengunjung.
-              </p>
             </div>
 
             <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4">
@@ -896,14 +814,7 @@ export default function Compendium() {
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Pulau-Kodingareng-Keke-Frame.png')] bg-cover bg-center flex justify-center">
         <div className="max-w-[1366px] w-full flex flex-col gap-4 p-8">
           <div className="flex flex-col sm:flex-row gap-4">
-            <div className="w-full sm:w-1/2 flex flex-col items-center gap-0">
-              <div className="w-full flex justify-start">
-                <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
-                  alt="logohotelunhas"
-                  className="w-24"
-                />
-              </div>
+            <div className="w-full sm:w-1/2 flex items-center gap-4">
               <div className="w-fit h-fit">
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-Main-Sticker.png"
@@ -914,9 +825,7 @@ export default function Compendium() {
             <div className="w-full sm:w-1/2 flex flex-col gap-4">
               <div className="w-full flex flex-col justify-between">
                 <div className="w-full flex flex-col gap-0">
-                  <div className="text-4xl font-bold text-black font-andhyta">
-                    Pulau
-                  </div>
+                  <div className="text-2xl font-bold text-black">Pulau</div>
                   <div className="text-4xl font-extrabold text-orange-600">
                     Kodingareng Keke
                   </div>
@@ -935,9 +844,7 @@ export default function Compendium() {
                 </div>
               </div>
               <div className="flex flex-col gap-0">
-                <h2 className="text-4xl font-bold text-black font-andhyta">
-                  Aktifitas
-                </h2>
+                <h2 className="text-3xl font-bold text-black">Aktifitas</h2>
                 <p>
                   Aktifitas seru yang tersedia di pulau Kodingareng Keke yang
                   dapat dinikmati para pengunjung.
@@ -945,9 +852,7 @@ export default function Compendium() {
               </div>
 
               <div className="flex flex-col">
-                <h3 className="text-2xl font-semibold text-black">
-                  Snorkeling
-                </h3>
+                <h3 className="text-2xl font-bold text-black">Snorkeling</h3>
 
                 <div className="flex flex-col sm:flex-row">
                   <div className="flex flex-col gap-4 w-full">
@@ -979,8 +884,9 @@ export default function Compendium() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row">
-            <div className="flex flex-col gap-0 w-full ">
-              <h3 className="text-2xl font-semibold text-black">Berenang</h3>
+            <div className="hidden md:block w-2/5"></div>
+            <div className="flex flex-col gap-0 w-full md:w-3/5">
+              <h3 className="text-2xl font-bold text-black">Berenang</h3>
               <div className="flex flex-col sm:flex-row gap-2">
                 <div className="flex flex-col gap-4 w-full sm:w-1/2 md:3/4">
                   <p>
@@ -998,11 +904,10 @@ export default function Compendium() {
                     keselamatan Anda.
                   </p>
                 </div>
-                <div className="w-full max-h-[280px] sm:w-1/2 md:1/4">
+                <div className="w-full sm:w-1/2 md:1/4">
                   <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-sub-Sticker-2.png"
                     alt=""
-                    className="h-full"
                   />
                 </div>
               </div>
@@ -1011,27 +916,21 @@ export default function Compendium() {
         </div>
       </section>
       {/* section Leang-Leang */}
-      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Main.png')] bg-cover bg-center w-full flex flex-col items-center py-8">
+      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Main.png')] bg-cover bg-center w-full flex flex-col items-center">
         <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Header.png')] bg-cover bg-center w-full flex flex-col items-center gap-4 pt-8 pb-4 px-8">
           <div className="max-w-[1366px] w-full">
-            <div className="w-full flex justify-end md:justify-start">
-              <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
-                alt="logohotelunhas"
-                className="w-24"
-              />
-            </div>
+            <div className="w-full flex justify-start">image</div>
             <div className="w-full flex flex-col sm:flex-row justify-between">
               <div className="w-full flex flex-col gap-0">
-                <div className="text-4xl font-bold text-black font-andhyta">
+                <div className="text-2xl font-bold text-black">
                   Taman Prasejarah
                 </div>
-                <div className="text-4xl font-extrabold text-[#06A6B6]">
+                <div className="text-4xl font-extrabold text-[#06A6B6] text-opacity-50 ">
                   Leang-leang
                 </div>
               </div>
 
-              <div className="flex justify-end items-center gap-3 w-full">
+              <div className="flex items-center gap-3 w-full">
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                   alt="Location"
@@ -1045,8 +944,8 @@ export default function Compendium() {
           </div>
         </div>
         <div className="max-w-[1366px]">
-          <div className="flex w-full px-8 pt-10 pb-10 text-black">
-            <p className="text-center  bg-yellow-300 text-white md:text-black bg-opacity-20 px-4 py-2 rounded-xl italic">
+          <div className="flex w-full px-8 md:px-20 pt-2 pb-10 text-black">
+            <p className="text-center font-semibold bg-yellow-300 text-white md:text-black bg-opacity-20 px-4 py-2 rounded-xl italic">
               Taman Prasejarah Leang-Leang merupakan bukti sejarah kehadiran
               peradaban terdahulu di daerah ini, dibuktikan oleh lukisan babi
               rusa dan telapak tangan di dinding gua. Di dalam gua, ditemukan
@@ -1057,9 +956,7 @@ export default function Compendium() {
             </p>
           </div>
           <div className=" flex flex-col text-black px-8">
-            <h1 className="text-4xl font-semibold text-black font-andhyta">
-              Wahana
-            </h1>
+            <h1 className="text-4xl font-bold italic">Wahana</h1>
             <p className="font-extralight">
               Wahana yang tersedia di taman prasejarah Leang-leang yang dapat
               dinikmati para pengunjung.
@@ -1077,7 +974,7 @@ export default function Compendium() {
                     key={index}
                     className="flex flex-col gap-2 p-4 rounded-xl bg-white bg-opacity-30"
                   >
-                    <h2 className="text-4xl font-semibold text-black">
+                    <h2 className="text-4xl font-bold text-black">
                       {section.sectionTitle}
                     </h2>
                     <div className="flex flex-col md:flex-row">
@@ -1115,7 +1012,7 @@ export default function Compendium() {
                   </div>
                 ))}{" "}
               </div>
-              <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Side.png')] bg-cover bg-center w-1/4 hidden md:flex flex-col gap-4 pt-8 pb-4 px-8 text-white rounded-xl">
+              <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Side.png')] bg-cover bg-center w-1/4 flex flex-col gap-4 pt-8 pb-4 px-8 text-white rounded-xl">
                 {/* Side Image */}
               </div>
             </div>
