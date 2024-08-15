@@ -20,12 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` font-poppins w-full flex flex-col justify-center`}>
-        <div className="w-full flex justify-center bg-black">
+        {/* <div className="w-full flex justify-center bg-black">
           <Header />
-        </div>
+        </div> */}
         <main className="w-full">{children}</main>
         <Footer />
-        <FooterNav />
+        {/* <FooterNav /> */}
       </body>
     </html>
   );

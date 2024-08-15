@@ -19,7 +19,7 @@ export default function Header() {
     <div className="hidden md:flex justify-between items-center w-full font-poppins max-w-[1366px] text-white">
       <div className="p-2">
         <img
-          src="https://hotelunhas.com/wp-content/uploads/2024/06/Logo-Unhas-.png"
+          src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
           alt="Logo-Unhas-.png"
         />
       </div>
