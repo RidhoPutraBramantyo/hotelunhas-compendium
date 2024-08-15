@@ -1047,7 +1047,7 @@ export default function Compendium() {
         </div>
         <div className="max-w-[1366px]">
           <div className="flex w-full px-8 pt-10 pb-10 text-black">
-            <p className="text-center  bg-yellow-300 text-white md:text-black bg-opacity-20 px-4 py-2 rounded-xl italic">
+            <p className="text-center  bg-yellow-300 text-black bg-opacity-20 px-4 py-2 rounded-xl italic">
               Taman Prasejarah Leang-Leang merupakan bukti sejarah kehadiran
               peradaban terdahulu di daerah ini, dibuktikan oleh lukisan babi
               rusa dan telapak tangan di dinding gua. Di dalam gua, ditemukan
