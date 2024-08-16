@@ -9,7 +9,7 @@ import Image from "next/image";
 const oranienbaum = Oranienbaum({ weight: "400", subsets: ["latin"] });
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
-export default function Compendium() {
+export default function Home() {
   const roomTypes = [
     "Deluxe Room",
     "Junior Suite Room",
