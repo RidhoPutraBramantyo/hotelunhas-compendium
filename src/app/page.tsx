@@ -228,17 +228,18 @@ export default function Compendium() {
                 Hotel & Convention
               </div>
             </div>
-
-            <div className="flex items-center gap-3 w-full md:w-1/3">
-              <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                alt="Location"
-                className="w-6 h-8"
-              />
-              <p className="text-end text-sm md:text-md italic w-fit">
-                Kampus UNHAS, Jl. Perintis Kemerdekaan No.Km. 10, Tamalanrea
-                Indah, Makassar
-              </p>
+            <div className="w-full flex justify-end items-center">
+              <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
+                <img
+                  src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
+                  alt="Location"
+                  className="w-6 h-8"
+                />
+                <p className="text-end text-md italic">
+                  Kampus UNHAS, Jl. Perintis Kemerdekaan No.Km. 10, Tamalanrea
+                  Indah, Makassar
+                </p>
+              </div>
             </div>
           </div>
           {/* ===================================== */}
@@ -571,17 +572,17 @@ export default function Compendium() {
               <h1 className="text-orange-500 text-4xl md:text-6xl font-extrabold p-0">
                 Losari
               </h1>
-              <div className="flex items-center gap-3 w-fit p-2 rounded-full bg-transparent bg-white bg-opacity-0 md:bg-opacity-50 ">
-                <div className="w-[35px] h-[35px] p-1 flex justify-center items-center">
+              <div className="w-full flex justify-end items-center">
+                <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
                   <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                     alt="Location"
                     className="w-4 h-6 md:w-6 md:h-8"
                   />
+                  <p className="text-end text-md italic ">
+                    Jalan Tanjung Bunga, Desa Maloku, Kecamatan Ujung Pandang
+                  </p>
                 </div>
-                <p className="text-start text-md italic">
-                  Jalan Tanjung Bunga, Desa Maloku, Kecamatan Ujung Pandang
-                </p>
               </div>
             </div>
           </div>
@@ -666,17 +667,19 @@ export default function Compendium() {
                     Mandala
                   </div>
                 </div>
-
-                <div className="flex items-center gap-3 w-full md:w-1/2">
-                  <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                    alt="Location"
-                    className="w-6 h-8"
-                  />
-                  <p className="text-end text-sm sm:text-md italic">
-                    Jl. Jend. Sudirman, Sawerigading, Kec. Ujung Pandang, Kota
-                    Makassar
-                  </p>
+                <div className="w-full md:w-1/2 flex justify-end items-center">
+                  <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
+                    {" "}
+                    <img
+                      src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
+                      alt="Location"
+                      className="w-6 h-8"
+                    />
+                    <p className="text-end text-sm sm:text-md italic">
+                      Jl. Jend. Sudirman, Sawerigading, Kec. Ujung Pandang, Kota
+                      Makassar
+                    </p>
+                  </div>
                 </div>
               </div>
               <div>
@@ -755,17 +758,18 @@ export default function Compendium() {
                     Somba Opu
                   </div>
                 </div>
-
-                <div className="flex items-center gap-3 w-full md:w-1/2">
-                  <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                    alt="Location"
-                    className="w-6 h-8"
-                  />
-                  <p className="text-end text-sm sm:text-md italic">
-                    Benteng sombaopu, Gusung Sarombe Sapiria, Benteng Somba Opu,
-                    Kec. Barombong, Kota Makassar,
-                  </p>
+                <div className="w-full md:w-1/2 flex justify-end">
+                  <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
+                    <img
+                      src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
+                      alt="Location"
+                      className="w-6 h-8"
+                    />
+                    <p className="text-end text-sm sm:text-md italic">
+                      Benteng sombaopu, Gusung Sarombe Sapiria, Benteng Somba
+                      Opu, Kec. Barombong, Kota Makassar,
+                    </p>
+                  </div>
                 </div>
               </div>
               {/* =========================================== */}
@@ -849,16 +853,18 @@ export default function Compendium() {
                   Akkarena
                 </div>
               </div>
-
-              <div className="flex items-center gap-3 p-3 w-full sm:w-1/3">
-                <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                  alt="Location"
-                  className="w-6 h-8"
-                />
-                <p className="text-end text-sm md:text-md italic w-fit">
-                  Jl. Metro Tj. Bunga, Tj. Merdeka, Kec. Tamalate, Kota Makassar
-                </p>
+              <div className="w-full flex justify-end items-center">
+                <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
+                  <img
+                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
+                    alt="Location"
+                    className="w-6 h-8"
+                  />
+                  <p className="text-end text-sm md:text-md italic w-fit">
+                    Jl. Metro Tj. Bunga, Tj. Merdeka, Kec. Tamalate, Kota
+                    Makassar
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -923,17 +929,18 @@ export default function Compendium() {
                     Kodingareng Keke
                   </div>
                 </div>
-
-                <div className="flex items-center gap-3 w-full">
-                  <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                    alt="Location"
-                    className="w-6 h-8"
-                  />
-                  <p className="text-end italic w-fit">
-                    P. Kondingareng, Kec. Ujung Tanah, Kota Makassar, Sulawesi
-                    Selatan
-                  </p>
+                <div className="w-full flex justify-end">
+                  <div className="flex justify-end items-center gap-3 w-fit p-2 rounded-full bg-white bg-opacity-50">
+                    <img
+                      src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
+                      alt="Location"
+                      className="w-6 h-8"
+                    />
+                    <p className="text-end italic w-fit">
+                      P. Kondingareng, Kec. Ujung Tanah, Kota Makassar, Sulawesi
+                      Selatan
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col gap-0">
@@ -951,7 +958,7 @@ export default function Compendium() {
                   Snorkeling
                 </h3>
 
-                <div className="flex flex-col sm:flex-row">
+                <div className="flex flex-col sm:flex-col-reverse lg:flex-row">
                   <div className="flex flex-col gap-4 w-full">
                     <p>
                       Pulau Kodingareng Keke menawarkan kondisi ombak yang
@@ -969,7 +976,7 @@ export default function Compendium() {
                       bawah laut Pulau Kodingareng Keke dengan nyaman dan aman.
                     </p>
                   </div>
-                  <div className="w-full">
+                  <div className="w-full p-4">
                     <img
                       src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-sub-Sticker-1.png"
                       alt=""
@@ -1000,7 +1007,7 @@ export default function Compendium() {
                     keselamatan Anda.
                   </p>
                 </div>
-                <div className="w-full max-h-[280px] sm:w-1/2 md:1/4">
+                <div className="w-full max-h-[280px] sm:w-1/2 md:1/4 p-4">
                   <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-sub-Sticker-2.png"
                     alt=""
@@ -1032,16 +1039,17 @@ export default function Compendium() {
                   Leang-leang
                 </div>
               </div>
-
-              <div className="flex justify-end items-center gap-3 w-full">
-                <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                  alt="Location"
-                  className="w-6 h-8"
-                />
-                <p className="text-end italic w-fit">
-                  Kel. Leang-Leang, Kec. Bantimurung, Kab. Maros.
-                </p>
+              <div className="w-full flex justify-end items-center">
+                <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
+                  <img
+                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
+                    alt="Location"
+                    className="w-6 h-8"
+                  />
+                  <p className="text-end italic w-fit">
+                    Kel. Leang-Leang, Kec. Bantimurung, Kab. Maros.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
