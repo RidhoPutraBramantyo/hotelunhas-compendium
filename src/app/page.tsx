@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { title } from "process";
 import Image from "next/image";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const oranienbaum = Oranienbaum({ weight: "400", subsets: ["latin"] });
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
@@ -208,11 +211,22 @@ export default function Home() {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({
+      duration: 1200, // Durasi animasi
+      once: true, // Animation will happen only once when scrolling down
+    });
+  }, []);
+
   return (
     <div className="w-full">
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/UnhasHotel-frame.png')] bg-cover w-full flex justify-center">
         <div className="max-w-[1366px] bg-center w-full flex flex-col gap-4 p-8">
-          <div className="w-full flex justify-center">
+          <div
+            className="w-full flex justify-center"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img
               src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
               alt="logohotelunhas"
@@ -220,7 +234,11 @@ export default function Home() {
             />
           </div>
           <div className="w-full flex flex-col md:flex-row justify-between">
-            <div className="w-full md:w-1/2 flex flex-col gap-0">
+            <div
+              className="w-full md:w-1/2 flex flex-col gap-0"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
               <div className="font-bold text-4xl text-black font-andhyta">
                 Unhas
               </div>
@@ -228,7 +246,11 @@ export default function Home() {
                 Hotel & Convention
               </div>
             </div>
-            <div className="w-full flex justify-end items-center">
+            <div
+              className="w-full flex justify-end items-center"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+            >
               <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
@@ -242,14 +264,19 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* ===================================== */}
+
           <div className="flex flex-col md:flex-row w-full gap-4">
             <div className="w-full flex flex-col gap-4">
               <div
                 id="baris-3"
                 className="w-full flex flex-col-reverse md:flex-row gap-4"
               >
-                <div className="flex flex-col w-full md:w-2/3 gap-4">
+                <div
+                  data-aos="fade-up"
+                  data-aos-once="false"
+                  data-aos-offset="200"
+                  className="flex flex-col w-full md:w-2/3 gap-4"
+                >
                   <h2 className="font-semibold text-4xl text-black font-andhyta">
                     Sejarah Singkat
                   </h2>
@@ -266,20 +293,28 @@ export default function Home() {
                     Makassar.
                   </p>
                 </div>
-                <div className="hidden w-full md:w-1/3 h-full md:flex items-center">
+                <div
+                  className="hidden w-full md:w-1/3 h-full md:flex items-center"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/08/Pemotongan-pita-2.png"
                     alt=""
-                    className="w-full h-fit
-               rounded-2xl"
+                    className="w-full h-fit rounded-2xl"
                   />
                 </div>
               </div>
+
               <div
                 id=""
                 className="flex flex-col md:flex-row items-start gap-4"
               >
-                <div className="w-full md:w-1/2 flex flex-col gap-0">
+                <div
+                  className="w-full md:w-1/2 flex flex-col gap-4"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1200"
+                >
                   <h2 className="font-semibold text-4xl text-black font-andhyta">
                     Galery
                   </h2>
@@ -349,7 +384,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col w-full md:w-1/2 gap-4">
+
+                <div
+                  className="flex flex-col w-full md:w-1/2 gap-4"
+                  data-aos="fade-in"
+                  data-aos-duration="1000"
+                >
                   <div className="flex flex-col gap-0">
                     <h2 className="font-semibold text-4xl text-black font-andhyta">
                       Kamar
@@ -396,9 +436,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div
               id="right-side"
               className="w-full md:w-1/4 hidden gap-2 flex-col items-center"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               <div className="w-full flex justify-end">
                 <h2 className="font-semibold text-4xl text-black font-andhyta flex flex-col text-end">
@@ -408,7 +451,12 @@ export default function Home() {
               </div>
               <div className="w-full grid grid-cols-2 md:flex md:flex-col gap-2 items-end overflow-auto">
                 {promoImage.map((item, index) => (
-                  <div key={index} className="w-full md:w-2/3">
+                  <div
+                    key={index}
+                    className="w-full md:w-2/3"
+                    data-aos="flip-left"
+                    data-aos-duration="1000"
+                  >
                     <img
                       src={item.imgSrc}
                       alt=""
@@ -425,14 +473,22 @@ export default function Home() {
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/FortRotterdam-Without-Grid-Frame.png')] sm:bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/FortRotterdam-Frame.png')] bg-cover bg-center w-full flex justify-center">
         <div className="max-w-[1366px] flex flex-col sm:flex-row gap-4 p-8">
           <div className="flex flex-col w-full sm:w-1/2">
-            <div className="w-full flex justify-start">
+            <div
+              className="w-full flex justify-start"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                 alt="logohotelunhas"
                 className="w-24"
               />
             </div>
-            <div className="flex flex-col justify-start gap-0">
+            <div
+              className="flex flex-col justify-start gap-0"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
               <h2 className="text-black text-4xl font-semibold font-andhyta">
                 Benteng
               </h2>
@@ -440,7 +496,11 @@ export default function Home() {
                 Rotterdam
               </h1>
             </div>
-            <div className="w-full flex justify-end">
+            <div
+              className="w-full flex justify-end"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <div className="flex justify-end items-center gap-3 w-fit p-2 rounded-full bg-white bg-opacity-50">
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
@@ -455,7 +515,11 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col w-full sm:w-1/2 gap-4">
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+            >
               <h2 className="font-semibold text-4xl text-black font-andhyta flex flex-col">
                 Fasilitas
               </h2>
@@ -464,7 +528,11 @@ export default function Home() {
                 para pengunjung.
               </span>
             </div>
-            <div className="flex flex-col gap-2">
+            <div
+              className="flex flex-col gap-2"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <h2 className="font-bold text-4xl text-black">
                 Museum La Galigo
               </h2>
@@ -525,7 +593,11 @@ export default function Home() {
               </div>
             </div>
             <div className="flex gap-5 text-black w-full h-full font-poppins">
-              <div className="flex flex-col gap-2">
+              <div
+                className="flex flex-col gap-2"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
                 <h2 className="font-semibold text-3xl text-black text-end">
                   Taman
                 </h2>
@@ -535,7 +607,7 @@ export default function Home() {
                     <img
                       src="https://hotelunhas.com/wp-content/uploads/2024/08/taman-rotterdam.png"
                       alt="taman-Rotterdam"
-                      className="rounded-lg object-cover w-full h-full" /* Equivalent to 5% border-radius */
+                      className="rounded-lg object-cover w-full h-full"
                     />
                   </div>
                   <div className="w-full md:w-2/3 h-full">
@@ -556,8 +628,12 @@ export default function Home() {
       </section>
       {/* section losari */}
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Losari-Frame.png')] bg-cover bg-center w-full flex justify-center">
-        <div className="max-w-[1366px] w-full flex flex-col sm:flex-row gap-4 p-8 ">
-          <div className="flex flex-col w-full sm:w-1/2">
+        <div className="max-w-[1366px] w-full flex flex-col sm:flex-row gap-4 p-8">
+          <div
+            className="flex flex-col w-full sm:w-1/2"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
             <div className="w-full flex justify-end md:justify-start">
               <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
@@ -565,7 +641,7 @@ export default function Home() {
                 className="w-24"
               />
             </div>
-            <div className="flex flex-col justify-start gap-0 ">
+            <div className="flex flex-col justify-start gap-0">
               <h2 className="text-black text-4xl font-semibold font-andhyta p-0">
                 Pantai
               </h2>
@@ -579,7 +655,7 @@ export default function Home() {
                     alt="Location"
                     className="w-4 h-6 md:w-6 md:h-8"
                   />
-                  <p className="text-end text-md italic ">
+                  <p className="text-end text-md italic">
                     Jalan Tanjung Bunga, Desa Maloku, Kecamatan Ujung Pandang
                   </p>
                 </div>
@@ -590,8 +666,12 @@ export default function Home() {
           <div className="flex flex-col w-full sm:w-1/2 gap-4">
             {spots.map((spot, index) => (
               <div key={index}>
-                {index % 2 == 0 ? (
-                  <div className="flex gap-5 text-black w-full h-full font-poppins">
+                {index % 2 === 0 ? (
+                  <div
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    className="flex gap-5 text-black w-full h-full font-poppins"
+                  >
                     <div className="flex flex-col gap-2">
                       <h2 className="font-semibold text-3xl text-black text-end">
                         {spot.title}
@@ -615,7 +695,11 @@ export default function Home() {
                     </div>
                   </div>
                 ) : (
-                  <div className="flex gap-5 text-black w-full h-full font-poppins">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                    className="flex gap-5 text-black w-full h-full font-poppins"
+                  >
                     <div className="flex flex-col gap-2">
                       <h2 className="font-semibold text-3xl text-black text-start">
                         {spot.title}
@@ -647,7 +731,11 @@ export default function Home() {
       {/* section Mandala & SombaOpu */}
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/MandalaSombaOpu-WithoutText-Frame.png')] bg-cover bg-center w-full h-full flex justify-center">
         <div className="max-w-[1366px] w-full h-full flex flex-col gap-10 py-8">
-          <div className="w-full flex justify-center">
+          <div
+            className="w-full flex justify-center"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img
               src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
               alt="logohotelunhas"
@@ -656,8 +744,12 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-10 px-8 w-full h-full items-start">
-            {/* vvv Left vvv */}
-            <div className="flex flex-col w-full sm:w-1/2 h-full gap-4">
+            {/* vvv Kiri vvv */}
+            <div
+              className="flex flex-col w-full sm:w-1/2 h-full gap-4"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
               <div className="w-full flex flex-col md:flex-row justify-between">
                 <div className="w-full md:w-1/2 flex flex-col gap-0">
                   <div className="text-4xl font-bold text-black font-andhyta">
@@ -669,7 +761,6 @@ export default function Home() {
                 </div>
                 <div className="w-full md:w-1/2 flex justify-end items-center">
                   <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
-                    {" "}
                     <img
                       src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                       alt="Location"
@@ -685,12 +776,17 @@ export default function Home() {
               <div>
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/Monumen-Mandala.png"
-                  alt=""
+                  alt="Monumen Mandala"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                  data-aos-duration="1200"
+                >
                   Monumen Mandala adalah simbol sejarah yang penting dalam
                   perjuangan merebut kembali Irian Barat dari Belanda pada tahun
                   1962. Selain sebagai pengingat pengorbanan pahlawan, monumen
@@ -701,11 +797,21 @@ export default function Home() {
                   wawasan sejarah tetapi juga pengalaman yang menghargai
                   perjuangan dan nasionalisme Indonesia.
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                >
                   Monumen Mandala di Makassar memiliki berbagai fasilitas dan
                   ruang yang masing-masing memiliki fungsi dan koleksi berbeda:
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <span className="text-black font-bold pr-1">
                     Lantai Dasar:
                   </span>
@@ -713,18 +819,33 @@ export default function Home() {
                   berbagai artefak dan dokumentasi sejarah terkait peristiwa
                   Pemberontakan DI/TII dan perjuangan kemerdekaan Indonesia.
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                  data-aos-duration="1200"
+                >
                   <span className="text-black font-bold pr-1">Lantai 1:</span>
                   Berisi ruang pameran lanjutan yang memperdalam pemahaman
                   mengenai peristiwa sejarah yang terjadi di Sulawesi Selatan,
                   serta koleksi foto dan dokumentasi lainnya.
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-right"
+                  data-aos-delay="500"
+                  data-aos-duration="1200"
+                >
                   <span className="text-black font-bold pr-1">Lantai 2:</span>
                   Dapat berfungsi sebagai area ruang konferensi atau seminar,
                   tempat di mana kegiatan budaya dan sosial sering diadakan.
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-right"
+                  data-aos-delay="600"
+                  data-aos-duration="1200"
+                >
                   <span className="text-black font-bold pr-1">
                     Lantai Atas:
                   </span>
@@ -732,23 +853,32 @@ export default function Home() {
                   pemandangan kota Makassar dari ketinggian, menjadi daya tarik
                   tambahan bagi pengunjung.
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-right"
+                  data-aos-delay="700"
+                  data-aos-duration="1200"
+                >
                   Monumen Mandala bukan hanya tempat bersejarah tetapi juga
                   menjadi pusat edukasi dan budaya yang penting bagi masyarakat
                   Makassar dan sekitarnya.
                 </p>
               </div>
             </div>
-            {/* ^^^ Left ^^^ */}
+            {/* ^^^ Kiri ^^^ */}
             {/* <div className="w-1/6 flex justify-center h-full">
-            <div className="hidden sm:block w-full rotate-90 ">
-              <span className="w-full text-nowrap bg-blue-500">
-                WISATA BERSEJARAH
-              </span>
-            </div>
-          </div> */}
-            {/*  vvv Right vvv */}
-            <div className="flex flex-col w-full sm:w-1/2 gap-4">
+        <div className="hidden sm:block w-full rotate-90">
+          <span className="w-full text-nowrap bg-blue-500">
+            WISATA BERSEJARAH
+          </span>
+        </div>
+      </div> */}
+            {/* vvv Kanan vvv */}
+            <div
+              className="flex flex-col w-full sm:w-1/2 gap-4"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+            >
               <div className="w-full flex flex-col md:flex-row justify-between">
                 <div className="w-full md:w-1/2 flex flex-col gap-0">
                   <div className="text-4xl font-bold text-black font-andhyta">
@@ -766,8 +896,8 @@ export default function Home() {
                       className="w-6 h-8"
                     />
                     <p className="text-end text-sm sm:text-md italic">
-                      Benteng sombaopu, Gusung Sarombe Sapiria, Benteng Somba
-                      Opu, Kec. Barombong, Kota Makassar,
+                      Benteng Somba Opu, Gusung Sarombe Sapiria, Benteng Somba
+                      Opu, Kec. Barombong, Kota Makassar
                     </p>
                   </div>
                 </div>
@@ -776,19 +906,29 @@ export default function Home() {
               <div>
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/SombaOpu-Top.png"
-                  alt=""
+                  alt="Benteng Somba Opu"
                 />
               </div>
               {/* =========================================== */}
               <div className="flex flex-col gap-2">
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  data-aos-duration="1200"
+                >
                   Benteng Somba Opu di Makassar adalah destinasi yang
                   menggabungkan sejarah dan keindahan alam Sulawesi Selatan.
                   Berikut adalah rangkuman lebih detail dari tiga daya tarik
                   utama tempat ini:
                 </p>
 
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  data-aos-duration="1200"
+                >
                   <span className="text-black font-bold pr-1">Benteng:</span>
                   Benteng Somba Opu adalah saksi sejarah yang penting dari
                   Kerajaan Gowa-Tallo. Bangunannya terbuat dari batu bata dan
@@ -798,7 +938,12 @@ export default function Home() {
                   strategis yang digunakan dalam pertahanan terhadap penjajah
                   Belanda.
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <span className="text-black font-bold pr-1">Rumah Adat:</span>
                   Di sekitar Benteng Somba Opu terdapat replika rumah
                   tradisional dari berbagai suku di Sulawesi Selatan, seperti
@@ -807,7 +952,12 @@ export default function Home() {
                   konstruksi yang mewakili kebudayaan dan keunikan arsitektur
                   masing-masing suku.
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                  data-aos-duration="1200"
+                >
                   <span className="text-black font-bold pr-1">Museum:</span>
                   Museum yang terletak di dalam kompleks Benteng Somba Opu
                   didedikasikan untuk menghormati tokoh Karaeng Patingalloang
@@ -819,7 +969,12 @@ export default function Home() {
                   untuk memahami sejarah perlawanan dan kekayaan budaya Sulawesi
                   Selatan.
                 </p>
-                <p className="text-start">
+                <p
+                  className="text-start"
+                  data-aos="fade-left"
+                  data-aos-delay="500"
+                  data-aos-duration="1200"
+                >
                   Dengan gabungan antara benteng bersejarah yang megah,
                   keberagaman rumah adat, dan kekayaan koleksi museum, Benteng
                   Somba Opu tidak hanya menjadi destinasi wisata yang menarik
@@ -835,7 +990,11 @@ export default function Home() {
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Pantai-Akkarena.png')] bg-cover bg-center flex justify-center">
         <div className="max-w-[1366px] w-full flex flex-row gap-4 p-4 sm:p-0">
           <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/AkkarenaSide-1.png')] bg-cover bg-center w-1/4 hidden sm:flex flex-row p-4">
-            <div className="w-full flex justify-start">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="800"
+              className="w-full flex justify-start"
+            >
               <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                 alt="logohotelunhas"
@@ -843,18 +1002,32 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-4 w-full sm:w-3/4 pr-0 sm:pr-8 sm:py-8 ">
+          <div className="flex flex-col gap-4 w-full sm:w-3/4 pr-0 sm:pr-8 sm:py-8">
             <div className="w-full flex flex-col md:flex-row justify-between">
               <div className="w-full sm:w-1/3 flex flex-col gap-0">
-                <div className="text-4xl font-bold text-black font-andhyta">
+                <div
+                  className="text-4xl font-bold text-black font-andhyta"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
                   Pantai
                 </div>
-                <div className="text-4xl font-extrabold text-orange-600">
+                <div
+                  className="text-4xl font-extrabold text-orange-600"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
                   Akkarena
                 </div>
               </div>
               <div className="w-full flex justify-end items-center">
-                <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
+                <div
+                  className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50"
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  data-aos-delay="200"
+                >
                   <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
                     alt="Location"
@@ -868,7 +1041,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-0">
+            <div
+              className="flex flex-col gap-0"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="300"
+            >
               <h2 className="text-4xl font-bold text-black font-andhyta">
                 Aktifitas
               </h2>
@@ -881,10 +1059,20 @@ export default function Home() {
             <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4">
               {actBeach.map((item, index) => (
                 <div key={index} className="flex flex-col gap-2">
-                  <h2 className="font-bold text-2xl text-black text-start">
+                  <h2
+                    className="font-bold text-2xl text-black text-start"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                    data-aos-delay={400 + index * 100}
+                  >
                     {item.title}
                   </h2>
-                  <div className="w-full h-full flex flex-col-reverse md:flex-row justify-center items-center gap-4">
+                  <div
+                    className="w-full h-full flex flex-col-reverse md:flex-row justify-center items-center gap-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay={500 + index * 100}
+                  >
                     <p className="text-sm w-full md:w-2/3 h-fit">{item.desc}</p>
                     <div className="w-full md:w-1/3 h-full flex items-center">
                       <img
@@ -905,14 +1093,23 @@ export default function Home() {
         <div className="max-w-[1366px] w-full flex flex-col gap-4 p-8">
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="w-full sm:w-1/2 flex flex-col items-center gap-0">
-              <div className="w-full flex justify-start">
+              <div
+                className="w-full flex justify-start"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                   alt="logohotelunhas"
                   className="w-24"
                 />
               </div>
-              <div className="w-fit h-fit">
+              <div
+                className="w-fit h-fit"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="100"
+              >
                 <img
                   src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-Main-Sticker.png"
                   alt=""
@@ -921,7 +1118,12 @@ export default function Home() {
             </div>
             <div className="w-full sm:w-1/2 flex flex-col gap-4">
               <div className="w-full flex flex-col justify-between">
-                <div className="w-full flex flex-col gap-0">
+                <div
+                  className="w-full flex flex-col gap-0"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="200"
+                >
                   <div className="text-4xl font-bold text-black font-andhyta">
                     Pulau
                   </div>
@@ -929,7 +1131,12 @@ export default function Home() {
                     Kodingareng Keke
                   </div>
                 </div>
-                <div className="w-full flex justify-end">
+                <div
+                  className="w-full flex justify-end"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="300"
+                >
                   <div className="flex justify-end items-center gap-3 w-fit p-2 rounded-full bg-white bg-opacity-50">
                     <img
                       src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
@@ -943,7 +1150,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-0">
+              <div
+                className="flex flex-col gap-0"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="400"
+              >
                 <h2 className="text-4xl font-bold text-black font-andhyta">
                   Aktifitas
                 </h2>
@@ -953,7 +1165,12 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-col">
+              <div
+                className="flex flex-col"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="500"
+              >
                 <h3 className="text-2xl font-semibold text-black">
                   Snorkeling
                 </h3>
@@ -963,7 +1180,7 @@ export default function Home() {
                     <p>
                       Pulau Kodingareng Keke menawarkan kondisi ombak yang
                       sangat tenang di pagi hari, yang membuatnya sempurna untuk
-                      kegiatan snorkeling, Spot snorkeling terbaik terletak di
+                      kegiatan snorkeling. Spot snorkeling terbaik terletak di
                       ujung pulau, dengan kedalaman air sekitar dua hingga tiga
                       meter.
                     </p>
@@ -987,11 +1204,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row">
-            <div className="flex flex-col gap-0 w-full ">
+          <div
+            className="flex flex-col sm:flex-row"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="600"
+          >
+            <div className="flex flex-col gap-0 w-full">
               <h3 className="text-2xl font-semibold text-black">Berenang</h3>
               <div className="flex flex-col sm:flex-row gap-2">
-                <div className="flex flex-col gap-4 w-full sm:w-1/2 md:3/4">
+                <div className="flex flex-col gap-4 w-full sm:w-1/2 md:w-3/4">
                   <p>
                     Pulau Kodingareng Keke adalah destinasi liburan yang indah
                     dengan berbagai fasilitas. Pengunjung dapat berenang bebas
@@ -1007,7 +1229,7 @@ export default function Home() {
                     keselamatan Anda.
                   </p>
                 </div>
-                <div className="w-full max-h-[280px] sm:w-1/2 md:1/4 p-4">
+                <div className="w-full max-h-[280px] sm:w-1/2 md:w-1/4 p-4">
                   <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-sub-Sticker-2.png"
                     alt=""
@@ -1023,7 +1245,11 @@ export default function Home() {
       <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Main.png')] bg-cover bg-center w-full flex flex-col items-center py-8">
         <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Header.png')] bg-cover bg-center w-full flex flex-col items-center gap-4 pt-8 pb-4 px-8">
           <div className="max-w-[1366px] w-full">
-            <div className="w-full flex justify-end md:justify-start">
+            <div
+              className="w-full flex justify-end md:justify-start"
+              data-aos="fade-down"
+              data-aos-duration="1200"
+            >
               <img
                 src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
                 alt="logohotelunhas"
@@ -1031,7 +1257,11 @@ export default function Home() {
               />
             </div>
             <div className="w-full flex flex-col sm:flex-row justify-between">
-              <div className="w-full flex flex-col gap-0">
+              <div
+                className="w-full flex flex-col gap-0"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
                 <div className="text-4xl font-bold text-black font-andhyta">
                   Taman Prasejarah
                 </div>
@@ -1039,7 +1269,12 @@ export default function Home() {
                   Leang-leang
                 </div>
               </div>
-              <div className="w-full flex justify-end items-center">
+              <div
+                className="w-full flex justify-end items-center"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="200"
+              >
                 <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
                   <img
                     src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
@@ -1055,8 +1290,13 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-[1366px]">
-          <div className="flex w-full px-8 pt-10 pb-10 text-black">
-            <p className="text-center  bg-yellow-300 text-black bg-opacity-20 px-4 py-2 rounded-xl italic">
+          <div
+            className="flex w-full px-8 pt-10 pb-10 text-black"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <p className="text-center bg-yellow-300 text-black bg-opacity-20 px-4 py-2 rounded-xl italic">
               Taman Prasejarah Leang-Leang merupakan bukti sejarah kehadiran
               peradaban terdahulu di daerah ini, dibuktikan oleh lukisan babi
               rusa dan telapak tangan di dinding gua. Di dalam gua, ditemukan
@@ -1066,7 +1306,12 @@ export default function Home() {
               Pelestarian Cagar Budaya Provinsi Sulawesi Selatan.
             </p>
           </div>
-          <div className=" flex flex-col text-black px-8">
+          <div
+            className="flex flex-col text-black px-8"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
             <h1 className="text-4xl font-semibold text-black font-andhyta">
               Wahana
             </h1>
@@ -1078,14 +1323,21 @@ export default function Home() {
 
           {/* ====================================== */}
 
-          {/* ====================================== */}
-          <div className=" flex flex-col gap-4 bg-transparent p-6">
+          <div
+            className="flex flex-col gap-4 bg-transparent p-6"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="600"
+          >
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex flex-col gap-4 w-full md:w-3/4">
                 {sectionData.map((section, index) => (
                   <div
                     key={index}
                     className="flex flex-col gap-2 p-4 rounded-xl bg-white bg-opacity-30"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-delay={`${index * 200}`}
                   >
                     <h2 className="text-4xl font-semibold text-black">
                       {section.sectionTitle}
@@ -1095,6 +1347,9 @@ export default function Home() {
                         <div
                           key={idx}
                           className="w-full flex flex-col md:flex-row gap-4 p-2 md:p-0 mb-4 md:mb-0"
+                          data-aos="fade-up"
+                          data-aos-duration="1200"
+                          data-aos-delay={`${idx * 200}`}
                         >
                           {item.imgSrc && (
                             <div className="w-full md:w-1/4">
@@ -1123,7 +1378,7 @@ export default function Home() {
                       ))}
                     </div>
                   </div>
-                ))}{" "}
+                ))}
               </div>
               <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Side.png')] bg-cover bg-center w-1/4 hidden md:flex flex-col gap-4 pt-8 pb-4 px-8 text-white rounded-xl">
                 {/* Side Image */}
@@ -1135,6 +1390,9 @@ export default function Home() {
                 <div
                   key={index}
                   className="flex flex-col p-4 bg-white bg-opacity-30 shadow rounded-xl h-full"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay={`${index * 200}`}
                 >
                   <h3 className="text-2xl font-bold ">{wisata.title}</h3>
                   <div className="flex flex-col lg:flex-row items-center gap-2 h-full">
