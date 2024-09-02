@@ -274,7 +274,7 @@ export default function Home() {
                     Hotel Unhas diresmikan pada jumat sore (22/4/2022) oleh
                     Universitas Hasanuddin di Makassar untuk menyediakan
                     akomodasi yang nyaman bagi tamu universitas dan masyarakat
-                    umum. Terletak di dalam kampus Universitas Hasanuddin, hotel
+                    umum. Terletak di area kampus Universitas Hasanuddin, hotel
                     ini awalnya dibangun untuk mendukung kegiatan akademik
                     seperti konferensi dan seminar. Unhas hotel terus memberikan
                     pelayanan dan fasilitas terbaik seperti: ruang konferensi,
@@ -332,7 +332,7 @@ export default function Home() {
                     </div>
                     <div className="col-span-2 border border-gray-300">
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-04-at-14.08.44.jpeg"
+                        src="https://hotelunhas.com/wp-content/uploads/2024/06/LOUNGE-1.png"
                         alt="Image 4"
                         className="w-full h-full object-cover"
                       />
@@ -1268,7 +1268,7 @@ export default function Home() {
                               <img
                                 src={item.imgSrc}
                                 alt={item.alt}
-                                className="rounded-lg"
+                                className="w-full h-full object-cover rounded-lg"
                               />
                             </div>
                           )}

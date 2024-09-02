@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Oranienbaum, Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import FooterNav from "@/components/layout/footerNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,12 +25,8 @@ export default function RootLayout({
         />
       </head>
       <body className={` font-poppins w-full flex flex-col justify-center`}>
-        {/* <div className="w-full flex justify-center bg-black">
-          <Header />
-        </div> */}
         <main className="w-full">{children}</main>
         <Footer />
-        {/* <FooterNav /> */}
       </body>
     </html>
   );

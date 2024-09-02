@@ -1,17 +1,19 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  // Mengaktifkan dukungan trailing slash jika perlu
-  trailingSlash: true,
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+  // trailingSlash: true,
 
-  // Menambahkan konfigurasi lain jika diperlukan
-  // Misalnya, menambahkan basePath jika menggunakan subdirektori
-  // basePath: '/subpath',
+  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
+  // skipTrailingSlashRedirect: true,
 
-  // Atur opsi lainnya sesuai kebutuhan proyek Anda
-  // Misalnya, Anda dapat mengaktifkan kompresi Gzip atau Brotli di sini
-
-  // Tentukan direktori output jika diperlukan (biasanya default adalah 'out')
-  // outDir: 'output-directory-name'
+  // Optional: Change the output directory `out` -> `dist`
+  // distDir: 'dist',
 };
 
 export default nextConfig;
