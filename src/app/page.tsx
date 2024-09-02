@@ -1,13 +1,13 @@
 "use client";
 
 import { Oranienbaum, Poppins } from "next/font/google";
-import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { title } from "process";
 import Image from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import LocationInfo from "@/components/ui/LocationInfo";
 
 const oranienbaum = Oranienbaum({ weight: "400", subsets: ["latin"] });
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
@@ -228,9 +228,9 @@ export default function Home() {
             data-aos-duration="1000"
           >
             <img
-              src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
+              src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
               alt="logohotelunhas"
-              className="w-24"
+              className="w-24 h-24 object-cover"
             />
           </div>
           <div className="w-full flex flex-col md:flex-row justify-between">
@@ -251,17 +251,7 @@ export default function Home() {
               data-aos="fade-left"
               data-aos-duration="1200"
             >
-              <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
-                <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                  alt="Location"
-                  className="w-6 h-8"
-                />
-                <p className="text-end text-md italic">
-                  Kampus UNHAS, Jl. Perintis Kemerdekaan No.Km. 10, Tamalanrea
-                  Indah, Makassar
-                </p>
-              </div>
+              <LocationInfo text="Kampus UNHAS, Jl. Perintis Kemerdekaan No.Km. 10, Tamalanrea Indah, Makassar" />
             </div>
           </div>
 
@@ -299,9 +289,9 @@ export default function Home() {
                   data-aos-duration="1000"
                 >
                   <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/08/Pemotongan-pita-2.png"
+                    src="https://hotelunhas.com/wp-content/uploads/2024/09/lounge-2024-09-02.jpeg"
                     alt=""
-                    className="w-full h-fit rounded-2xl"
+                    className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
               </div>
@@ -479,9 +469,9 @@ export default function Home() {
               data-aos-duration="1000"
             >
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
+                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
                 alt="logohotelunhas"
-                className="w-24"
+                className="w-24 h-24 object-cover"
               />
             </div>
             <div
@@ -492,7 +482,7 @@ export default function Home() {
               <h2 className="text-black text-4xl font-semibold font-andhyta">
                 Benteng
               </h2>
-              <h1 className="text-amber-400 text-4xl md:text-8xl font-extrabold p-0">
+              <h1 className="text-amber-400 text-4xl md:text-5xl lg:text-7xl font-extrabold p-0">
                 Rotterdam
               </h1>
             </div>
@@ -501,16 +491,7 @@ export default function Home() {
               data-aos="fade-left"
               data-aos-duration="1000"
             >
-              <div className="flex justify-end items-center gap-3 w-fit p-2 rounded-full bg-white bg-opacity-50">
-                <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                  alt="Location"
-                  className="w-6 h-8"
-                />
-                <p className="text-end text-md italic">
-                  Jl. Ujung Pandang, Bulo Gading, Kec. Ujung Pandang
-                </p>
-              </div>
+              <LocationInfo text="Jl. Ujung Pandang, Bulo Gading, Kec. Ujung Pandang" />
             </div>
           </div>
 
@@ -636,9 +617,9 @@ export default function Home() {
           >
             <div className="w-full flex justify-end md:justify-start">
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
+                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
                 alt="logohotelunhas"
-                className="w-24"
+                className="w-24 h-24 object-cover"
               />
             </div>
             <div className="flex flex-col justify-start gap-0">
@@ -648,18 +629,7 @@ export default function Home() {
               <h1 className="text-orange-500 text-4xl md:text-6xl font-extrabold p-0">
                 Losari
               </h1>
-              <div className="w-full flex justify-end items-center">
-                <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
-                  <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                    alt="Location"
-                    className="w-4 h-6 md:w-6 md:h-8"
-                  />
-                  <p className="text-end text-md italic">
-                    Jalan Tanjung Bunga, Desa Maloku, Kecamatan Ujung Pandang
-                  </p>
-                </div>
-              </div>
+              <LocationInfo text="Jalan Tanjung Bunga, Desa Maloku, Kecamatan Ujung Pandang" />
             </div>
           </div>
           {/*  */}
@@ -737,9 +707,9 @@ export default function Home() {
             data-aos-duration="1000"
           >
             <img
-              src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
+              src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
               alt="logohotelunhas"
-              className="w-24"
+              className="w-24 h-24 object-cover"
             />
           </div>
 
@@ -759,19 +729,7 @@ export default function Home() {
                     Mandala
                   </div>
                 </div>
-                <div className="w-full md:w-1/2 flex justify-end items-center">
-                  <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
-                    <img
-                      src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                      alt="Location"
-                      className="w-6 h-8"
-                    />
-                    <p className="text-end text-sm sm:text-md italic">
-                      Jl. Jend. Sudirman, Sawerigading, Kec. Ujung Pandang, Kota
-                      Makassar
-                    </p>
-                  </div>
-                </div>
+                <LocationInfo text="Jl. Jend. Sudirman, Sawerigading, Kec. Ujung Pandang, Kota Makassar" />
               </div>
               <div>
                 <img
@@ -888,19 +846,7 @@ export default function Home() {
                     Somba Opu
                   </div>
                 </div>
-                <div className="w-full md:w-1/2 flex justify-end">
-                  <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
-                    <img
-                      src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                      alt="Location"
-                      className="w-6 h-8"
-                    />
-                    <p className="text-end text-sm sm:text-md italic">
-                      Benteng Somba Opu, Gusung Sarombe Sapiria, Benteng Somba
-                      Opu, Kec. Barombong, Kota Makassar
-                    </p>
-                  </div>
-                </div>
+                <LocationInfo text="Benteng Somba Opu, Gusung Sarombe Sapiria, Benteng Somba Opu, Kec. Barombong, Kota Makassar" />
               </div>
               {/* =========================================== */}
               <div>
@@ -996,7 +942,7 @@ export default function Home() {
               className="w-full flex justify-start"
             >
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
+                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
                 alt="logohotelunhas"
                 className="w-28 h-20"
               />
@@ -1022,22 +968,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full flex justify-end items-center">
-                <div
-                  className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50"
-                  data-aos="fade-left"
-                  data-aos-duration="1200"
-                  data-aos-delay="200"
-                >
-                  <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                    alt="Location"
-                    className="w-6 h-8"
-                  />
-                  <p className="text-end text-sm md:text-md italic w-fit">
-                    Jl. Metro Tj. Bunga, Tj. Merdeka, Kec. Tamalate, Kota
-                    Makassar
-                  </p>
-                </div>
+                <LocationInfo text="Jl. Metro Tj. Bunga, Tj. Merdeka, Kec. Tamalate, Kota Makassar" />
               </div>
             </div>
 
@@ -1099,9 +1030,9 @@ export default function Home() {
                 data-aos-duration="1200"
               >
                 <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
+                  src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
                   alt="logohotelunhas"
-                  className="w-24"
+                  className="w-24 h-24 object-cover"
                 />
               </div>
               <div
@@ -1137,17 +1068,7 @@ export default function Home() {
                   data-aos-duration="1200"
                   data-aos-delay="300"
                 >
-                  <div className="flex justify-end items-center gap-3 w-fit p-2 rounded-full bg-white bg-opacity-50">
-                    <img
-                      src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                      alt="Location"
-                      className="w-6 h-8"
-                    />
-                    <p className="text-end italic w-fit">
-                      P. Kondingareng, Kec. Ujung Tanah, Kota Makassar, Sulawesi
-                      Selatan
-                    </p>
-                  </div>
+                  <LocationInfo text="P. Kondingareng, Kec. Ujung Tanah, Kota Makassar, Sulawesi Selatan" />
                 </div>
               </div>
               <div
@@ -1251,9 +1172,9 @@ export default function Home() {
               data-aos-duration="1200"
             >
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
+                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
                 alt="logohotelunhas"
-                className="w-24"
+                className="w-24 h-24 object-cover"
               />
             </div>
             <div className="w-full flex flex-col sm:flex-row justify-between">
@@ -1275,16 +1196,7 @@ export default function Home() {
                 data-aos-duration="1200"
                 data-aos-delay="200"
               >
-                <div className="flex justify-end items-center gap-3 w-fit h-fit p-2 rounded-full bg-white bg-opacity-50">
-                  <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png"
-                    alt="Location"
-                    className="w-6 h-8"
-                  />
-                  <p className="text-end italic w-fit">
-                    Kel. Leang-Leang, Kec. Bantimurung, Kab. Maros.
-                  </p>
-                </div>
+                <LocationInfo text="Kel. Leang-Leang, Kec. Bantimurung, Kab. Maros." />
               </div>
             </div>
           </div>

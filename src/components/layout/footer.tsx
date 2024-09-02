@@ -63,8 +63,8 @@ export default function Footer() {
           <div className="w-full flex flex-col">
             <div className="w-full flex flex-col gap-4 py-10">
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/UnhasLogo-1.png"
-                className="w-20"
+                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+                className="w-24 h-24 object-cover"
                 alt="Unhas Hotel Logo"
               />
               <p className="text-center md:text-start">
