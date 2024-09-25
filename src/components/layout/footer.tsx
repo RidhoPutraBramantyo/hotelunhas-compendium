@@ -6,49 +6,53 @@ import { useRouter } from "next/navigation";
 const socialLinks = [
   {
     href: "https://www.facebook.com/hotelunhas",
-    src: "https://hotelunhas.com/wp-content/uploads/2024/06/Sosmed-facebook.png",
+    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-Facebook-black-50x50-1.png",
     alt: "Facebook",
   },
   {
     href: "https://wa.me/628114467373",
-    src: "https://hotelunhas.com/wp-content/uploads/2024/06/Sosmed-Whatsapp.png",
+    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-whatsapp-black-50x50-1.png",
     alt: "Whatsapp",
   },
   {
     href: "https://www.instagram.com/unhashotel",
-    src: "https://hotelunhas.com/wp-content/uploads/2024/06/Sosmed-Instagram.png",
+    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-Instagram-black-50x50-1.png",
     alt: "Instagram",
   },
   {
     href: "https://youtu.be/fQEQ7Lo51lA?si=eg0K-ikMRGhniqyO",
-    src: "https://hotelunhas.com/wp-content/uploads/2024/06/Sosmed-Youtube.png",
+    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-Youtube-black-50x50-1.png",
     alt: "YouTube",
   },
   {
     href: "https://twitter.com/HotelUnhas",
-    src: "https://hotelunhas.com/wp-content/uploads/2024/06/Sosmed-Twitter.png",
+    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-twitter-black-50x50-1.png",
     alt: "Twitter",
   },
 ];
 
 const contactInfo = [
   {
-    src: "https://hotelunhas.com/wp-content/uploads/2024/06/Vector-location.png",
+    url: "https://maps.app.goo.gl/5F7SshmdXJyujEDp6",
+    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Icon-Location-grey-50x50-1.png",
     alt: "Location",
     text: "Jl. Perintis Kemerdekaan KM 10 ( Kampus UNHAS ), Kota Makassar, Sulawesi Selatan, Kode Pos 90245",
-    className: "w-6 h-8",
+    className: "w-6 h-6 md:w-8 md:h-8 hidden sm:block",
   },
   {
-    src: "https://hotelunhas.com/wp-content/uploads/2024/06/Vector-gmail.png",
+    url: "mailto:unhashotel@gmail.com",
+
+    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Icon-mail-grey-50x50-1.png",
     alt: "Email",
     text: "unhashotel@gmail.com",
-    className: "w-6 h-6",
+    className: "w-6 h-6 md:w-8 md:h-8 hidden sm:block",
   },
   {
-    src: "https://hotelunhas.com/wp-content/uploads/2024/06/Vector-phone.png",
+    url: "https://wa.me/628114467373",
+    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Icon-phone-grey-50x50-1.png",
     alt: "Phone",
     text: "(0411) 89 0000 9 / 0811 446 7373",
-    className: "w-6 h-6",
+    className: "w-6 h-6 md:w-8 md:h-8 hidden sm:block",
   },
 ];
 
@@ -56,14 +60,14 @@ export default function Footer() {
   const router = useRouter();
 
   return (
-    <div className="w-full flex-col items-center bg-slate-300">
+    <div className="w-full flex justify-center bg-slate-300">
       <div className="flex flex-col items-center gap-2 px-8 max-w-[1366px]">
         <div className="bg-red-600 h-2 w-full" />
         <div className="w-full flex gap-4">
           <div className="w-full flex flex-col">
             <div className="w-full flex flex-col gap-4 py-10">
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+                src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
                 className="w-24 h-24 object-cover"
                 alt="Unhas Hotel Logo"
               />
@@ -87,13 +91,22 @@ export default function Footer() {
                         alt={info.alt}
                         className={info.className}
                       />
-                      <p>{info.text}</p>
+
+                      <p className="w-full flex justify-center sm:justify-start text-center sm:text-start">
+                        <a
+                          href={info.url} // ganti dengan nomor WhatsApp yang dituju
+                          target="_blank"
+                          className="sm:w-fit"
+                        >
+                          {info.text}
+                        </a>
+                      </p>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="w-full flex md:hidden flex-col items-end  md:justify-end gap-2">
-                <div className="flex flex-row gap-3 rounded-xl">
+              <div className="w-full flex md:hidden flex-col item-center md:items-end justify-center md:justify-end gap-2">
+                <div className="w-full sm:w-fit flex justify-center gap-3 rounded-xl">
                   {socialLinks.map(({ href, src, alt }) => (
                     <a
                       key={alt}
@@ -111,13 +124,15 @@ export default function Footer() {
                     </a>
                   ))}
                 </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15895.219204341836!2d119.4887404!3d-5.1351109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefd94db791629%3A0x2cfefda72a3cb257!2sUnhas%20Hotel%20%26%20Convention!5e0!3m2!1sid!2sid!4v1717553895463!5m2!1sid!2sid"
-                  width="270"
-                  height="290"
-                  className="border-0 rounded-[20px]"
-                  loading="lazy"
-                />
+                <div className="w-full sm:w-fit flex justify-center pb-8 sm:pb-4 md:pb-0">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15895.219204341836!2d119.4887404!3d-5.1351109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefd94db791629%3A0x2cfefda72a3cb257!2sUnhas%20Hotel%20%26%20Convention!5e0!3m2!1sid!2sid!4v1717553895463!5m2!1sid!2sid"
+                    width="270"
+                    height="290"
+                    className="border-0 rounded-[20px]"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -150,7 +165,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="p-4"></div>
     </div>
   );
 }

@@ -36,19 +36,19 @@ export default function Home() {
   const promoImage = [
     {
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2023/06/wedding-deals-New-scaled.jpg",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2023/06/wedding-deals-New-scaled.jpg",
     },
     {
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/06/Kopi-Latte-1448x2048-1.jpg",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/06/Kopi-Latte-1448x2048-1.jpg",
     },
     {
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/06/Pizza-1448x2048-1.jpg",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/06/Pizza-1448x2048-1.jpg",
     },
     {
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/06/BBQ-1448x2048-1.jpg",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/06/BBQ-1448x2048-1.jpg",
     },
   ];
 
@@ -56,7 +56,7 @@ export default function Home() {
     {
       title: "Spot Sunset",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/Pantai-Losari-1-Spot-Sunset.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Pantai-Losari-1-Spot-Sunset.png",
       alt: "taman-Rotterdam",
       descriptions: [
         "Berwisata idealnya untuk menikmati pemandangan indah dan kuliner khas. Pantai Losari menawarkan keduanya. Di sini, Anda bisa menyaksikan matahari terbenam yang memukau sambil menikmati Pisang Epe, kuliner khas Makassar.",
@@ -66,7 +66,7 @@ export default function Home() {
     {
       title: "Masjid Terapung",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/Pantai-Losari-2-Masjid-Terapung.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Pantai-Losari-2-Masjid-Terapung.png",
       alt: "taman-Rotterdam",
       descriptions: [
         "Selain menikmati pemandangan dan kuliner, pengunjung Pantai Losari dapat melakukan wisata religi di Masjid Terapung Amirul Mukminin yang ikonik. Masjid ini memungkinkan pengunjung Muslim berwisata sambil beribadah.",
@@ -76,7 +76,7 @@ export default function Home() {
     {
       title: "Kapal Phinisi",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/Pantai-Losari-3-Kapal-Phinissi.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Pantai-Losari-3-Kapal-Phinissi.png",
       alt: "taman-Rotterdam",
       descriptions: [
         "Di kawasan Pantai Losari, pengunjung dapat menyewa Kapal Pinisi yang tersedia di anjungan letter Pantai Losari.",
@@ -89,37 +89,37 @@ export default function Home() {
     {
       title: "Taman",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/akkarena-grid-1.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/akkarena-grid-1.png",
       desc: "Pantai Akkarena memiliki taman seluas 450 meter persegi dengan desain mirip Mediterania. Taman ini menawarkan udara segar dan dilengkapi dengan sound system dan layar LCD untuk hiburan dan informasi wisatawan.",
     },
     {
       title: "Dermaga Cinta",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/akkarena-grid-2.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/akkarena-grid-2.png",
       desc: "Perahu wisata yang disewa untuk berkeliling pantai akan bersandar di Dermaga Cinta, sebuah area dengan panjang sekitar 150 meter dan lebar 5 meter, dihiasi lampu warna-warni mempercantik pemandangan malam.",
     },
     {
       title: "Camping Beach Party",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/akkarena-grid-4.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/akkarena-grid-4.png",
       desc: "Pantai Akkarena sering mengadakan Camping Beach Party saat liburan panjang, terutama akhir tahun. Acara ini menawarkan kembang api, api unggun, DJ performance, dan festival kuliner.",
     },
     {
       title: "Wahana Air",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/akkarena-grid-1.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/akkarena-grid-1.png",
       desc: "Pantai Akkarena menawarkan berbagai wahana permainan air seperti jetski, banana boat, speed boat, dan kano bagi pengunjung yang menyukai tantangan. Bagi yang lebih santai, tersedia juga perahu sewaan.",
     },
     {
       title: "Sunset",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/akkarena-grid-3.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/akkarena-grid-3.png",
       desc: "Pantai Akkarena terkenal sebagai tempat terbaik untuk menikmati indahnya sunset. Wisatawan sering datang ke sini untuk menyaksikan langit yang memancarkan warna-warni kemerahan saat matahari terbenam.",
     },
     {
       title: "Festival",
       imgSrc:
-        "https://hotelunhas.com/wp-content/uploads/2024/08/akkarena-grid-5.png",
+        "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/akkarena-grid-5.png",
       desc: "Pantai Akkarena menjadi tuan rumah berbagai acara, termasuk Festival Layang-Layang yang diselenggarakan setiap tahun oleh Dinas Pariwisata Kota Makassar. Acara ini sangat dinantikan oleh masyarakat.",
     },
   ];
@@ -220,7 +220,7 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/UnhasHotel-frame.png')] bg-cover w-full flex justify-center">
+      <section className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/UnhasHotel-frame.png')] bg-cover w-full flex justify-center">
         <div className="max-w-[1366px] bg-center w-full flex flex-col gap-4 p-8">
           <div
             className="w-full flex justify-center"
@@ -228,7 +228,7 @@ export default function Home() {
             data-aos-duration="1000"
           >
             <img
-              src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+              src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
               alt="logohotelunhas"
               className="w-24 h-24 object-cover"
             />
@@ -289,7 +289,7 @@ export default function Home() {
                   data-aos-duration="1000"
                 >
                   <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/09/lounge-2024-09-02.jpeg"
+                    src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/lounge-2024-09-02.jpeg"
                     alt=""
                     className="w-full h-full object-cover rounded-2xl"
                   />
@@ -300,74 +300,110 @@ export default function Home() {
                 id=""
                 className="flex flex-col md:flex-row items-start gap-4"
               >
-                <div
-                  className="w-full md:w-1/2 flex flex-col gap-4"
-                  data-aos="zoom-in-up"
-                  data-aos-duration="1200"
-                >
-                  <h2 className="font-semibold text-4xl text-black font-andhyta">
+                <div className="w-full md:w-1/2 flex flex-col gap-4">
+                  <h2
+                    className="font-semibold text-4xl text-black font-andhyta"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
                     Galery
                   </h2>
                   <div className="grid grid-cols-3 gap-2.5">
-                    <div className="row-span-2 border border-gray-300">
+                    <div
+                      className="row-span-2 border border-gray-300"
+                      data-aos="fade-down"
+                      data-aos-duration="1200"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2022/11/IMG_20221026_113126-400x284.jpg"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Lounge-1-1980x125124-1.png"
                         alt="Image 1"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="border border-gray-300">
+                    <div
+                      className="border border-gray-300"
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/05/IMG_20221022_183019-scaled-1-400x284.jpg"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Restaurant-1980x125124-1.png"
                         alt="Image 2"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="border border-gray-300">
+                    <div
+                      className="border border-gray-300"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/05/IMG_20221022_194646-scaled-1-400x284.jpg"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Cafe-1980x125124-1.png"
                         alt="Image 3"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="col-span-2 border border-gray-300">
+                    <div
+                      className="col-span-2 border border-gray-300"
+                      data-aos="zoom-in"
+                      data-aos-duration="1200"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/06/LOUNGE-1.png"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/01_lounge-with-ornamen-scaled.jpg"
                         alt="Image 4"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="border border-gray-300">
+                    <div
+                      className="border border-gray-300"
+                      data-aos="flip-left"
+                      data-aos-duration="2000"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-04-at-14.08.46-2.jpeg"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Deluxe-Room-2.png"
                         alt="Image 5"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="row-span-2 border border-gray-300">
+                    <div
+                      className="row-span-2 border border-gray-300"
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/06/deluxe-room-1.png"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Gym-Room-8.jpeg"
                         alt="Image 6"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="border border-gray-300">
+                    <div
+                      className="border border-gray-300"
+                      data-aos="fade-up-left"
+                      data-aos-duration="1200"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/06/junior-suite-room-1.png"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Gym-Room-4.jpeg"
                         alt="Image 7"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="border border-gray-300">
+                    <div
+                      className="border border-gray-300"
+                      data-aos="fade-up-right"
+                      data-aos-duration="1200"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/06/deluxe-room-2.png"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Executive-Suite-Room-3.png"
                         alt="Image 8"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="col-span-2 border border-gray-300">
+                    <div
+                      className="col-span-2 border border-gray-300"
+                      data-aos="zoom-in"
+                      data-aos-duration="1200"
+                    >
                       <img
-                        src="https://hotelunhas.com/wp-content/uploads/2024/06/Rectangle-2-1.png"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Deluxe-Room-3.png"
                         alt="Image 9"
                         className="w-full h-full object-cover"
                       />
@@ -380,8 +416,12 @@ export default function Home() {
                   data-aos="fade-in"
                   data-aos-duration="1000"
                 >
-                  <div className="flex flex-col gap-0">
-                    <h2 className="font-semibold text-4xl text-black font-andhyta">
+                  <div className="flex flex-col gap-4">
+                    <h2
+                      className="font-semibold text-4xl text-black font-andhyta"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                    >
                       Kamar
                     </h2>
                     <div className="flex flex-wrap gap-2">
@@ -389,10 +429,13 @@ export default function Home() {
                         <button
                           key={index}
                           className="flex items-center gap-1 p-1.5 font-poppins font-semibold text-xs rounded-lg border border-gray-300 bg-slate-100"
+                          data-aos="fade-right"
+                          data-aos-offset="500"
+                          data-aos-duration={1000 + index * 200}
                         >
                           <div className="">
                             <img
-                              src="https://hotelunhas.com/wp-content/uploads/2024/08/material-symbols-light_meeting-room.png"
+                              src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/material-symbols-light_meeting-room.png"
                               alt="door-icon"
                               className="w-4 h-4"
                             />
@@ -404,7 +447,11 @@ export default function Home() {
                   </div>
 
                   <div className="flex flex-col gap-0">
-                    <h2 className="font-semibold text-4xl text-black font-andhyta">
+                    <h2
+                      className="font-semibold text-4xl text-black font-andhyta"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                    >
                       Fasilitas
                     </h2>
                     <div className="flex flex-wrap gap-2">
@@ -412,10 +459,12 @@ export default function Home() {
                         <button
                           key={index}
                           className="flex items-center gap-1 p-1.5 font-poppins font-semibold text-xs rounded-lg border border-gray-300 bg-slate-100"
+                          data-aos="fade-right"
+                          data-aos-duration={1000 + index * 200}
                         >
                           <img
                             className="w-4 h-4"
-                            src="https://hotelunhas.com/wp-content/uploads/2024/08/solar_star-fall-bold.png"
+                            src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/solar_star-fall-bold.png"
                             alt="Fasilitas Icon"
                           />
                           <span className="text-md md:text-lg">{facility}</span>
@@ -460,7 +509,7 @@ export default function Home() {
         </div>
       </section>
       {/* section rotterdam */}
-      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/FortRotterdam-Without-Grid-Frame.png')] sm:bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/FortRotterdam-Frame.png')] bg-cover bg-center w-full flex justify-center">
+      <section className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/FortRotterdam-Without-Grid-Frame.png')] sm:bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/FortRotterdam-Frame.png')] bg-cover bg-center w-full flex justify-center">
         <div className="max-w-[1366px] flex flex-col sm:flex-row gap-4 p-8">
           <div className="flex flex-col w-full sm:w-1/2">
             <div
@@ -469,7 +518,7 @@ export default function Home() {
               data-aos-duration="1000"
             >
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+                src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
                 alt="logohotelunhas"
                 className="w-24 h-24 object-cover"
               />
@@ -519,7 +568,7 @@ export default function Home() {
               </h2>
               <div>
                 <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/08/MuseumLaGaligo.png"
+                  src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/MuseumLaGaligo.png"
                   alt=""
                   className="rounded-xl"
                 />
@@ -586,7 +635,7 @@ export default function Home() {
                 <div className="w-full h-full flex flex-col md:flex-row justify-center items-center gap-4">
                   <div className="w-full md:w-1/3 h-full">
                     <img
-                      src="https://hotelunhas.com/wp-content/uploads/2024/08/taman-rotterdam.png"
+                      src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/taman-rotterdam.png"
                       alt="taman-Rotterdam"
                       className="rounded-lg object-cover w-full h-full"
                     />
@@ -608,7 +657,7 @@ export default function Home() {
         </div>
       </section>
       {/* section losari */}
-      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Losari-Frame.png')] bg-cover bg-center w-full flex justify-center">
+      <section className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Losari-Frame.png')] bg-cover bg-center w-full flex justify-center">
         <div className="max-w-[1366px] w-full flex flex-col sm:flex-row gap-4 p-8">
           <div
             className="flex flex-col w-full sm:w-1/2"
@@ -617,7 +666,7 @@ export default function Home() {
           >
             <div className="w-full flex justify-end md:justify-start">
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+                src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
                 alt="logohotelunhas"
                 className="w-24 h-24 object-cover"
               />
@@ -699,7 +748,7 @@ export default function Home() {
         </div>
       </section>
       {/* section Mandala & SombaOpu */}
-      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/MandalaSombaOpu-WithoutText-Frame.png')] bg-cover bg-center w-full h-full flex justify-center">
+      <section className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/MandalaSombaOpu-WithoutText-Frame.png')] bg-cover bg-center w-full h-full flex justify-center">
         <div className="max-w-[1366px] w-full h-full flex flex-col gap-10 py-8">
           <div
             className="w-full flex justify-center"
@@ -707,7 +756,7 @@ export default function Home() {
             data-aos-duration="1000"
           >
             <img
-              src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+              src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
               alt="logohotelunhas"
               className="w-24 h-24 object-cover"
             />
@@ -733,7 +782,7 @@ export default function Home() {
               </div>
               <div>
                 <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/08/Monumen-Mandala.png"
+                  src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Monumen-Mandala.png"
                   alt="Monumen Mandala"
                 />
               </div>
@@ -851,7 +900,7 @@ export default function Home() {
               {/* =========================================== */}
               <div>
                 <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/08/SombaOpu-Top.png"
+                  src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/SombaOpu-Top.png"
                   alt="Benteng Somba Opu"
                 />
               </div>
@@ -933,16 +982,16 @@ export default function Home() {
         </div>
       </section>
       {/* section Akkarena */}
-      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Pantai-Akkarena.png')] bg-cover bg-center flex justify-center">
+      <section className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Pantai-Akkarena.png')] bg-cover bg-center flex justify-center">
         <div className="max-w-[1366px] w-full flex flex-row gap-4 p-4 sm:p-0">
-          <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/AkkarenaSide-1.png')] bg-cover bg-center w-1/4 hidden sm:flex flex-row p-4">
+          <div className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/AkkarenaSide.png')] bg-cover bg-center w-1/4 hidden sm:flex flex-row p-4">
             <div
               data-aos="fade-right"
               data-aos-duration="800"
               className="w-full flex justify-start"
             >
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+                src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
                 alt="logohotelunhas"
                 className="w-28 h-20"
               />
@@ -1020,7 +1069,7 @@ export default function Home() {
         </div>
       </section>
       {/* section Kodingareng */}
-      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Pulau-Kodingareng-Keke-Frame.png')] bg-cover bg-center flex justify-center">
+      <section className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Pulau-Kodingareng-Keke-Frame.png')] bg-cover bg-center flex justify-center">
         <div className="max-w-[1366px] w-full flex flex-col gap-4 p-8">
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="w-full sm:w-1/2 flex flex-col items-center gap-0">
@@ -1030,7 +1079,7 @@ export default function Home() {
                 data-aos-duration="1200"
               >
                 <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+                  src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
                   alt="logohotelunhas"
                   className="w-24 h-24 object-cover"
                 />
@@ -1042,8 +1091,8 @@ export default function Home() {
                 data-aos-delay="100"
               >
                 <img
-                  src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-Main-Sticker.png"
-                  alt=""
+                  src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Kodingareng-Main-Sticker.png"
+                  alt="Kodingareng-Main-Sticker.png"
                 />
               </div>
             </div>
@@ -1116,8 +1165,8 @@ export default function Home() {
                   </div>
                   <div className="w-full p-4">
                     <img
-                      src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-sub-Sticker-1.png"
-                      alt=""
+                      src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Kodingareng-sub-Sticker-1.png"
+                      alt="Kodingareng-sub-Sticker-1.png"
                       className=""
                     />
                   </div>
@@ -1152,7 +1201,7 @@ export default function Home() {
                 </div>
                 <div className="w-full max-h-[280px] sm:w-1/2 md:w-1/4 p-4">
                   <img
-                    src="https://hotelunhas.com/wp-content/uploads/2024/08/Kodingareng-sub-Sticker-2.png"
+                    src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Kodingareng-sub-Sticker-2.png"
                     alt=""
                     className="h-full"
                   />
@@ -1163,8 +1212,8 @@ export default function Home() {
         </div>
       </section>
       {/* section Leang-Leang */}
-      <section className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Main.png')] bg-cover bg-center w-full flex flex-col items-center py-8">
-        <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Header.png')] bg-cover bg-center w-full flex flex-col items-center gap-4 pt-8 pb-4 px-8">
+      <section className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Taman-Leang-Leang-Main.png')] bg-cover bg-center w-full flex flex-col items-center py-8">
+        <div className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Taman-Leang-Leang-Main.png')] bg-cover bg-center w-full flex flex-col items-center gap-4 pt-8 pb-4 px-8">
           <div className="max-w-[1366px] w-full">
             <div
               className="w-full flex justify-end md:justify-start"
@@ -1172,7 +1221,7 @@ export default function Home() {
               data-aos-duration="1200"
             >
               <img
-                src="https://hotelunhas.com/wp-content/uploads/2024/08/Hotelunhas-logo-bintang-black-font.png"
+                src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
                 alt="logohotelunhas"
                 className="w-24 h-24 object-cover"
               />
@@ -1292,7 +1341,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="bg-[url('https://hotelunhas.com/wp-content/uploads/2024/08/Taman-Leang-Leang-Side.png')] bg-cover bg-center w-1/4 hidden md:flex flex-col gap-4 pt-8 pb-4 px-8 text-white rounded-xl">
+              <div className="bg-[url('https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Taman-Leang-Leang-Side.png')] bg-cover bg-center w-1/4 hidden md:flex flex-col gap-4 pt-8 pb-4 px-8 text-white rounded-xl">
                 {/* Side Image */}
               </div>
             </div>

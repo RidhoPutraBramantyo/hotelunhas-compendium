@@ -20,11 +20,11 @@ export default function RootLayout({
       <head>
         <link
           rel="shortcut icon"
-          href="https://hotelunhas.com/wp-content/uploads/2022/10/cropped-icon-png.png"
+          href="https://hotelunhas.id/wordpress/wp-content/uploads/2022/10/cropped-icon-png.png"
           type="image/x-icon"
         />
       </head>
-      <body className={` font-poppins w-full flex flex-col justify-center`}>
+      <body className={`font-poppins w-screen flex flex-col justify-center`}>
         <main className="w-full">{children}</main>
         <Footer />
       </body>
