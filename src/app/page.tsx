@@ -289,8 +289,8 @@ export default function Home() {
                   data-aos-duration="1000"
                 >
                   <img
-                    src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/lounge-2024-09-02.jpeg"
-                    alt=""
+                    src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/01_lounge-with-ornamen-scaled.jpg"
+                    alt="lounge ornamen"
                     className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
@@ -348,7 +348,7 @@ export default function Home() {
                       data-aos-duration="1200"
                     >
                       <img
-                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/01_lounge-with-ornamen-scaled.jpg"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/01_lounge-cafe-scaled.jpg"
                         alt="Image 4"
                         className="w-full h-full object-cover"
                       />
@@ -370,7 +370,7 @@ export default function Home() {
                       data-aos-duration="1200"
                     >
                       <img
-                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Gym-Room-8.jpeg"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/03_lounge-cafelive-music-scaled.jpg"
                         alt="Image 6"
                         className="w-full h-full object-cover"
                       />
@@ -381,8 +381,19 @@ export default function Home() {
                       data-aos-duration="1200"
                     >
                       <img
-                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Gym-Room-4.jpeg"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Gym-Room-8.jpeg"
                         alt="Image 7"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div
+                      className="border border-gray-300"
+                      data-aos="fade-up-left"
+                      data-aos-duration="1200"
+                    >
+                      <img
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/02_lounge-with-ornamen-scaled.jpg"
+                        alt="Image 8"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -392,12 +403,12 @@ export default function Home() {
                       data-aos-duration="1200"
                     >
                       <img
-                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Executive-Suite-Room-3.png"
-                        alt="Image 8"
+                        src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/03_lounge-with-ornamen-scaled.jpg"
+                        alt="Image 9"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div
+                    {/* <div
                       className="col-span-2 border border-gray-300"
                       data-aos="zoom-in"
                       data-aos-duration="1200"
@@ -407,7 +418,7 @@ export default function Home() {
                         alt="Image 9"
                         className="w-full h-full object-cover"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
