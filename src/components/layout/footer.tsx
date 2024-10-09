@@ -6,27 +6,27 @@ import { useRouter } from "next/navigation";
 const socialLinks = [
   {
     href: "https://www.facebook.com/hotelunhas",
-    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-Facebook-black-50x50-1.png",
+    src: "https://hotelunhas.id/wp-content/uploads/2024/09/Sosmed-Facebook-black-50x50-1.png",
     alt: "Facebook",
   },
   {
     href: "https://wa.me/628114467373",
-    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-whatsapp-black-50x50-1.png",
+    src: "https://hotelunhas.id/wp-content/uploads/2024/09/Sosmed-whatsapp-black-50x50-1.png",
     alt: "Whatsapp",
   },
   {
     href: "https://www.instagram.com/unhashotel",
-    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-Instagram-black-50x50-1.png",
+    src: "https://hotelunhas.id/wp-content/uploads/2024/09/Sosmed-Instagram-black-50x50-1.png",
     alt: "Instagram",
   },
   {
     href: "https://youtu.be/fQEQ7Lo51lA?si=eg0K-ikMRGhniqyO",
-    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-Youtube-black-50x50-1.png",
+    src: "https://hotelunhas.id/wp-content/uploads/2024/09/Sosmed-Youtube-black-50x50-1.png",
     alt: "YouTube",
   },
   {
     href: "https://twitter.com/HotelUnhas",
-    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Sosmed-twitter-black-50x50-1.png",
+    src: "https://hotelunhas.id/wp-content/uploads/2024/09/Sosmed-twitter-black-50x50-1.png",
     alt: "Twitter",
   },
 ];
@@ -34,7 +34,7 @@ const socialLinks = [
 const contactInfo = [
   {
     url: "https://maps.app.goo.gl/5F7SshmdXJyujEDp6",
-    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Icon-Location-grey-50x50-1.png",
+    src: "https://hotelunhas.id/wp-content/uploads/2024/09/Icon-Location-grey-50x50-1.png",
     alt: "Location",
     text: "Jl. Perintis Kemerdekaan KM 10 ( Kampus UNHAS ), Kota Makassar, Sulawesi Selatan, Kode Pos 90245",
     className: "w-6 h-6 md:w-8 md:h-8 hidden sm:block",
@@ -42,14 +42,14 @@ const contactInfo = [
   {
     url: "mailto:unhashotel@gmail.com",
 
-    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Icon-mail-grey-50x50-1.png",
+    src: "https://hotelunhas.id/wp-content/uploads/2024/09/Icon-mail-grey-50x50-1.png",
     alt: "Email",
     text: "unhashotel@gmail.com",
     className: "w-6 h-6 md:w-8 md:h-8 hidden sm:block",
   },
   {
     url: "https://wa.me/628114467373",
-    src: "https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/Icon-phone-grey-50x50-1.png",
+    src: "https://hotelunhas.id/wp-content/uploads/2024/09/Icon-phone-grey-50x50-1.png",
     alt: "Phone",
     text: "(0411) 89 0000 9 / 0811 446 7373",
     className: "w-6 h-6 md:w-8 md:h-8 hidden sm:block",
@@ -67,7 +67,7 @@ export default function Footer() {
           <div className="w-full flex flex-col">
             <div className="w-full flex flex-col gap-4 py-10">
               <img
-                src="https://hotelunhas.id/wordpress/wp-content/uploads/2024/09/New-bintang-logo-01.png"
+                src="https://hotelunhas.id/wp-content/uploads/2024/09/New-bintang-logo-01.png"
                 className="w-24 h-24 object-cover"
                 alt="Unhas Hotel Logo"
               />
@@ -163,6 +163,7 @@ export default function Footer() {
               loading="lazy"
             />
           </div>
+          <div></div>{" "}
         </div>
       </div>
     </div>

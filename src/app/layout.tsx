@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link
           rel="shortcut icon"
-          href="https://hotelunhas.id/wordpress/wp-content/uploads/2022/10/cropped-icon-png.png"
+          href="https://hotelunhas.id/wp-content/uploads/2022/10/cropped-icon-png.png"
           type="image/x-icon"
         />
       </head>
